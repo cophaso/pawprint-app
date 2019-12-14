@@ -1,0 +1,10 @@
+.loginBar-container{
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 10px;
+}
+
+.loginBar-link{
+    text-decoration: none;
+    font-weight: bolder;
+}
