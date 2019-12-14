@@ -6,6 +6,7 @@ import LoginPage from './routes/Login/LoginPage';
 import SignupPage from './routes/Signup/SignupPage'
 import HomePage from './routes/HomePage/HomePage';
 import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
+import AddPupPage from './routes/AddPup/AddPupPage';
 
 class App extends Component {
   render(){
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path={'/signup'} component={SignupPage} />
             <Route path={'/home'} component={HomePage} />
             <Route path={'/yourpups'} component={UsersPupsPage} />
+            <Route path={'/addpup'} component={AddPupPage} />
           </Switch>
         </main>
       </div>
