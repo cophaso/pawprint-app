@@ -22,7 +22,7 @@ class HomePage extends React.Component {
         <section className="calendar">
             <div className = "dogCalendar">
                 <span className="title">Today's Guests</span>
-                <span className="dogIcon" role="img">🐶</span>
+                <span role='img' aria-label='icon' className="dogIcon">🐶</span>
                 <span className="counter">#</span>
             </div>
         </section>
@@ -30,11 +30,11 @@ class HomePage extends React.Component {
         <section className="dogAvatars">
           <div className="dogList">
             <UserAvatar size="200" name="avatar" src={puggy} />
-            <h1>Buster</h1>
+            <h2>Buster</h2>
             <UserAvatar size="200" name="avatar" src={dogpup} />
-            <h1>Pickles</h1>
+            <h2>Pickles</h2>
             <UserAvatar size="200" name="avatar" src={corgi} />
-            <h1>Corgenius</h1>
+            <h2>Corgenius</h2>
         </div>
         </section>
 

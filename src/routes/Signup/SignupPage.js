@@ -1,9 +1,9 @@
 import React, { Component }  from 'react'
-import LoginForm from '../../components/LoginForm/LoginForm'
+import SignupForm from '../../components/SignupForm/SignupForm'
 import NavBar from '../../components/NavBar/NavBar'
-import './LoginPage.css'
+import './SignupPage.css'
 
-export default class LoginPage extends Component {
+export default class SignupPage extends Component {
     static defaultProps = {
       location: {},
       history: {
@@ -11,7 +11,7 @@ export default class LoginPage extends Component {
       },
     }
   
-    handleLoginSuccess = () => {
+    handleSignupSuccess = () => {
       const { location, history } = this.props
       const destination = (location.state || {}).from || '/home'
       history.push(destination)
@@ -22,11 +22,12 @@ export default class LoginPage extends Component {
       return (
         <>
         <NavBar />
-        <div className='LoginPage--container'>
-          <div className='LoginPage'>
-            <h2>Login</h2>
-            <LoginForm
-              onLoginSuccess={this.handleLoginSuccess}
+        <div className='SignupPage--container'>
+          
+          <div className='SignupPage'>
+            <h2>Sign Up</h2>
+            <SignupForm
+              onSignupSuccess={this.handleSignupSuccess}
             />
           </div>
         </div>
