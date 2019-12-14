@@ -1,6 +1,5 @@
 import React from 'react';
 import './homePage.css';
-import moment from 'moment';
 import NavBar from '../../components/NavBar/NavBar';
 import PupservationBar from '../../components/PupservationBar/PupservationBar';
 import puggy from '../../assets/images/puggy.jpg';
@@ -12,41 +11,6 @@ import UserAvatar from 'react-user-avatar';
 class HomePage extends React.Component {
     constructor(props) {
       super(props);
-      
-      this.state = {
-        month: moment(),
-        selected: moment().startOf('day')
-      };
-      
-      this.previous = this.previous.bind(this);
-      this.next = this.next.bind(this);
-    }
-    
-    previous() {
-      const {
-        month,
-      } = this.state;
-  
-      this.setState({
-        month: month.subtract(1, 'month'),
-      });
-    }
-  
-    next() {
-      const {
-        month,
-      } = this.state;
-  
-      this.setState({
-        month: month.add(1,'month'),
-      });
-    }
-    
-    select(day) {
-      this.setState({
-        selected: day.date,
-        month: day.date.clone(),
-      });
     }
   
   
@@ -58,7 +22,7 @@ class HomePage extends React.Component {
         <section className="calendar">
             <div className = "dogCalendar">
                 <span className="title">Today's Guests</span>
-                <span className="dogIcon">🐶</span>
+                <span role='img' aria-label='icon' className="dogIcon">🐶</span>
                 <span className="counter">#</span>
             </div>
         </section>
@@ -66,11 +30,11 @@ class HomePage extends React.Component {
         <section className="dogAvatars">
           <div className="dogList">
             <UserAvatar size="200" name="avatar" src={puggy} />
-            <h1>Buster</h1>
+            <h2>Buster</h2>
             <UserAvatar size="200" name="avatar" src={dogpup} />
-            <h1>Pickles</h1>
+            <h2>Pickles</h2>
             <UserAvatar size="200" name="avatar" src={corgi} />
-            <h1>Corgenius</h1>
+            <h2>Corgenius</h2>
         </div>
         </section>
 
