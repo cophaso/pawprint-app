@@ -1,0 +1,20 @@
+* {
+    box-sizing: border-box;
+}
+
+.pupservationContainer {
+    margin: 30px;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+}
+
+.dropdown--active .dropdown__content {
+    display: block;
+}

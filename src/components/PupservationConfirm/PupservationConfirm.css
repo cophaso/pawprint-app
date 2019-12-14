@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+.pupservationConfirm-container {
+    text-align: center;
+    border-top: 1px solid lightgray;
+    margin: 40px;
+    padding: 20px;
+    background: lightseagreen;
+}
+
+.pupservationConfirm-link{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;    
+}
+

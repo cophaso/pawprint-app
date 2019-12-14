@@ -3,11 +3,11 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom'
 import './index.css';
 import App from './App';
-import HomePage from './routes/HomePage/HomePage';
+import PupservationPage from './routes/PupservationPage/pupservationPage';
 
 ReactDOM.render(
     <BrowserRouter>
-        <HomePage />
+        <PupservationPage />
     </BrowserRouter>, 
     document.getElementById('root')
 );
