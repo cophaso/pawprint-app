@@ -2,15 +2,17 @@
     box-sizing: border-box;
 }
 
-.pupservationBar-container{
+.pupservationConfirm-container {
     text-align: center;
     border-top: 1px solid lightgray;
+    margin: 40px;
     padding: 20px;
     background: #214A77;
 }
 
-.pupservationBar-link{
+.pupservationConfirm-link{
     text-decoration: none;
     font-weight: bolder;
-    color: white;
+    color: white;    
 }
+

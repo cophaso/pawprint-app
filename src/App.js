@@ -7,6 +7,7 @@ import SignupPage from './routes/Signup/SignupPage'
 import HomePage from './routes/HomePage/HomePage';
 import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
 import AddPupPage from './routes/AddPup/AddPupPage';
+import PupservationPage from './routes/PupservationPage/pupservationPage';
 
 class App extends Component {
   render(){
@@ -24,6 +25,7 @@ class App extends Component {
             <Route path={'/login'} component={LoginPage} />
             <Route path={'/signup'} component={SignupPage} />
             <Route path={'/home'} component={HomePage} />
+            <Route path={'/pupservations'} component={PupservationPage} />
             <Route path={'/yourpups'} component={UsersPupsPage} />
             <Route path={'/addpup'} component={AddPupPage} />
           </Switch>

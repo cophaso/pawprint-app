@@ -11,39 +11,6 @@ import UserAvatar from 'react-user-avatar';
 class HomePage extends React.Component {
     constructor(props) {
       super(props);
-      
-      this.state = {
-      };
-      
-      this.previous = this.previous.bind(this);
-      this.next = this.next.bind(this);
-    }
-    
-    previous() {
-      const {
-        month,
-      } = this.state;
-  
-      this.setState({
-        month: month.subtract(1, 'month'),
-      });
-    }
-  
-    next() {
-      const {
-        month,
-      } = this.state;
-  
-      this.setState({
-        month: month.add(1,'month'),
-      });
-    }
-    
-    select(day) {
-      this.setState({
-        selected: day.date,
-        month: day.date.clone(),
-      });
     }
   
   
@@ -63,11 +30,11 @@ class HomePage extends React.Component {
         <section className="dogAvatars">
           <div className="dogList">
             <UserAvatar size="200" name="avatar" src={puggy} />
-            <h1>Buster</h1>
+            <h2>Buster</h2>
             <UserAvatar size="200" name="avatar" src={dogpup} />
-            <h1>Pickles</h1>
+            <h2>Pickles</h2>
             <UserAvatar size="200" name="avatar" src={corgi} />
-            <h1>Corgenius</h1>
+            <h2>Corgenius</h2>
         </div>
         </section>
 

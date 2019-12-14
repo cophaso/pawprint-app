@@ -6,11 +6,11 @@ export default class LoginForm extends Component {
     return (
       <form className='LoginForm'>
         <div className='email'>
-          <label for="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="text" name='email' id='email' />
         </div>
         <div className="password">
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" name='password' id='password' />
         </div>
         <div className="signup-bt">
