@@ -3,11 +3,11 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
-.LoginPage--container{
+.SignupPage--container{
   min-width: 700px;
 }
 
-.LoginPage {
+.SignupPage {
   background-color: #214A77;  
   text-align: center;
   color: white;
@@ -18,7 +18,7 @@ body {
   margin-top: 50px;
 }
 
-.LoginForm{
+.SignupForm{
   display: block;
 }
 
@@ -46,11 +46,11 @@ button {
 }
 
 @media only screen and (max-width: 768px) {
-  .LoginPage--container{
+  .SignupPage--container{
     min-width: 400px;
   }
   
-  .LoginPage {
+  .SignupPage {
     background-color: #214A77;  
     text-align: center;
     color: white;
