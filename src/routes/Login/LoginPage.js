@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { Component }  from 'react'
+import LoginForm from '../../components/LoginForm/LoginForm'
+import NavBar from '../../components/NavBar/NavBar'
+import './LoginPage.css'
 
-export default function LoginPage(){
-    return (
+export default class LoginPage extends Component {
+    static defaultProps = {
+      location: {},
+      history: {
+        push: () => {},
+      },
+    }
+  
+    handleLoginSuccess = () => {
+      const { location, history } = this.props
+      const destination = (location.state || {}).from || '/home'
+      history.push(destination)
+      window.location.reload()
+    }
+  
+    render() {
+      return (
         <>
-        a login page
+        <NavBar />
+        <div className='loginpage--container'>
+          
+          <div className='LoginPage'>
+            <h2>Login</h2>
+            <LoginForm
+              onLoginSuccess={this.handleLoginSuccess}
+            />
+          </div>
+        </div>
         </>
-    )
-}
+      )
+    }
+  }
