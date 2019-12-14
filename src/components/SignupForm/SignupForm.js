@@ -6,7 +6,7 @@ export default class SignupForm extends Component {
     return (
       <form className='SignupForm'>
         <div className='email'>
-          <label for="email">Email</label>
+          <label htmlfor="email">Email</label>
           <input type="text" name='email' id='email' />
         </div>
         <div className="password">

@@ -6,6 +6,7 @@ import LoginPage from './routes/Login/LoginPage';
 import SignupPage from './routes/Signup/SignupPage'
 import HomePage from './routes/HomePage/HomePage';
 import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
+import AddPupPage from './routes/AddPup/AddPupPage';
 import PupservationPage from './routes/PupservationPage/pupservationPage';
 import PuppyProfile from './routes/PuppyProfile/PuppyProfile';
 
@@ -28,6 +29,7 @@ class App extends Component {
             <Route path={'/pupservations'} component={PupservationPage} />
             <Route path={'/profile'} component={PuppyProfile} />
             <Route path={'/yourpups'} component={UsersPupsPage} />
+            <Route path={'/addpup'} component={AddPupPage} />
           </Switch>
         </main>
       </div>
