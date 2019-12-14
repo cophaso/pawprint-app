@@ -6,8 +6,12 @@ import LoginPage from './routes/Login/LoginPage';
 import HomePage from './routes/HomePage/HomePage';
 import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
 
+import DATA from './userData';
+
 class App extends Component {
   render(){
+    const pups = DATA.users[0].usersPups;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -21,7 +25,7 @@ class App extends Component {
             />
             <Route path={'/login'} component={LoginPage} />
             <Route path={'/home'} component={HomePage} />
-            <Route path={'/yourpups'} component={UsersPupsPage} />
+            <Route path={'/yourpups'} render={() => <UsersPupsPage pups={pups} />} />
           </Switch>
         </main>
       </div>
