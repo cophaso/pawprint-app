@@ -1,0 +1,65 @@
+body {
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .dogCalendar {
+    margin: 100px auto;
+    display: flex;
+    flex-direction: column;
+    width: 190px;
+    height: 200px;
+    text-align: center;
+  }
+  
+  .title, .dogIcon, .counter {
+    border: 2px solid lightseagreen;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1 0 0;
+  }
+  
+  .title { 
+    background-color: lightseagreen; 
+    border-bottom: none;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .counter { 
+    position: relative;
+    background-color: lightseagreen; 
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    z-index: 4;
+    
+    
+  }
+  
+  .title, .counter {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2em;
+  }
+  
+  .dogIcon {
+    position: relative;
+    background-color: white;
+    color: black;
+    flex: 2 0 0;
+    border-top: 0; border-bottom: 0;
+    font-weight: 100;
+    font-size: 6em;
+  }
+
+img {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    text-align: center;
+}
