@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class LoginForm extends Component {
-
   render() {
     return (
       <form className='LoginForm'>
@@ -16,7 +16,7 @@ export default class LoginForm extends Component {
         <div className="signup-bt">
           <button>Sign Up?</button>
         </div>
-        <button type='submit'>Submit</button>
+        <NavLink to='/home'><button type='submit'>Submit</button></NavLink>
       </form>
     )
   }

@@ -3,12 +3,12 @@ import './UsersPupsList.css'
 import UsersPup from '../UsersPup/UsersPup'
 
 
-export default function UsersPupsList(){
-    return(
-        <>
-            <ul>
-                <UsersPup />
-            </ul>
-        </>
-    )
+export default function UsersPupsList() {
+  return (
+    <>
+      <ul>
+        <UsersPup />
+      </ul>
+    </>
+  )
 }

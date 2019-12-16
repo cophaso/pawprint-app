@@ -36,17 +36,17 @@ class PupservationPage extends React.Component {
         <div>
         <NavBar />
         <div className="pupservationContainer">
-            <h2>Pick a date:</h2>
+            <h2 className='pupservation-header'>Pick a date:</h2>
                 <div className='dateDropdown'>
                     <DatePicker
                     selected={this.state.startDate}
                     onChange={this.handleChange}
                     />
                 </div>
-        <h2>Pick a pup:</h2>
+        <h2 className='pupservation-header'>Pick a pup:</h2>
         <Dropdown options={options} onChange={this._onSelect} value={defaultOption} placeholder="Select an option" />
 
-        <h2>Services:</h2>
+        <h2 className='pupservation-header'>Services:</h2>
         <Dropdown options={options2} onChange={this._onSelect} value={defaultOption2} placeholder="Select an option" />
 
         <PupservationConfirm />

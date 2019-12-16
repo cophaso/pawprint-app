@@ -61,7 +61,7 @@ body {
   background-color: #E6E6EB;
 }
 
-h2 {
+.home-header {
     text-align: center;
     text-shadow: 1px 1px white;
     color: #392942;
