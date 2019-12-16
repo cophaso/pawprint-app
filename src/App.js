@@ -8,9 +8,14 @@ import HomePage from './routes/HomePage/HomePage';
 import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
 import AddPupPage from './routes/AddPup/AddPupPage';
 import PupservationPage from './routes/PupservationPage/pupservationPage';
+import PuppyProfile from './routes/PuppyProfile/PuppyProfile';
+
+import DATA from './userData';
 
 class App extends Component {
   render(){
+    const pups = DATA.users[0].usersPups;
+
     return (
       <div className="App">
         <header className="App-header">
@@ -25,8 +30,9 @@ class App extends Component {
             <Route path={'/login'} component={LoginPage} />
             <Route path={'/signup'} component={SignupPage} />
             <Route path={'/home'} component={HomePage} />
+            <Route path={'/yourpups'} render={() => <UsersPupsPage pups={pups} />} />
             <Route path={'/pupservations'} component={PupservationPage} />
-            <Route path={'/yourpups'} component={UsersPupsPage} />
+            <Route path={'/profile'} component={PuppyProfile} />
             <Route path={'/addpup'} component={AddPupPage} />
           </Switch>
         </main>
