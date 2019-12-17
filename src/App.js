@@ -10,7 +10,6 @@ import AddPupPage from './routes/AddPup/AddPupPage';
 import PupservationPage from './routes/PupservationPage/pupservationPage';
 import PuppyProfile from './routes/PuppyProfile/PuppyProfile';
 import MenuPage from './components/MenuPage/MenuPage';
-import PupservationConfirm from './components/PupservationConfirm/PupservationConfirm';
 
 import DATA from './userData';
 
