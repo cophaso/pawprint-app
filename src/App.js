@@ -9,6 +9,8 @@ import UsersPupsPage from './routes/UsersPups/UsersPupsPage';
 import AddPupPage from './routes/AddPup/AddPupPage';
 import PupservationPage from './routes/PupservationPage/pupservationPage';
 import PuppyProfile from './routes/PuppyProfile/PuppyProfile';
+import MenuPage from './components/MenuPage/MenuPage';
+import PupservationConfirm from './components/PupservationConfirm/PupservationConfirm';
 
 import DATA from './userData';
 
@@ -34,6 +36,7 @@ class App extends Component {
             <Route path={'/pupservations'} component={PupservationPage} />
             <Route path={'/profile'} component={PuppyProfile} />
             <Route path={'/addpup'} component={AddPupPage} />
+            <Route path={'/menu'} component={MenuPage} />
           </Switch>
         </main>
       </div>
