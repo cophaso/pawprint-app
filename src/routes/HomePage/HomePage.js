@@ -9,11 +9,10 @@ import UserAvatar from 'react-user-avatar';
 
 
 class HomePage extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-  
-  
+    // constructor(props) {
+    //   super(props);
+    // }
+    
     render() {
       return (
         <div>
@@ -30,11 +29,11 @@ class HomePage extends React.Component {
         <section className="dogAvatars">
           <div className="dogList">
             <UserAvatar size="200" name="avatar" src={puggy} />
-            <h2>Buster</h2>
+            <h2 className='home-header'>Buster</h2>
             <UserAvatar size="200" name="avatar" src={dogpup} />
-            <h2>Pickles</h2>
+            <h2 className='home-header'>Pickles</h2>
             <UserAvatar size="200" name="avatar" src={corgi} />
-            <h2>Corgenius</h2>
+            <h2 className='home-header'>Corgenius</h2>
         </div>
         </section>
 
