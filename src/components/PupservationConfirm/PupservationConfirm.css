@@ -4,15 +4,20 @@
 
 .pupservationConfirm-container {
     text-align: center;
-    border-top: 1px solid lightgray;
+    border: 2px solid lightgray;
     margin: 40px;
     padding: 20px;
     background: #214A77;
+    cursor: pointer;
 }
 
 .pupservationConfirm-link{
     text-decoration: none;
     font-weight: bolder;
     color: white;    
+}
+
+.pupservationConfirm-link:hover {
+    cursor: pointer;
 }
 

@@ -4,8 +4,24 @@
 
 .pupservationContainer {
     margin: 30px;
+    background-color: #214A77;  
+    color: white;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin-top: 50px;
 }
 
+.pupservation-heading {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.Dropdown-control, .dateDropdown {
+    width: 90%;
+    margin: 0 auto;
+}
 .dropdown {
     display: inline-block;
 }
@@ -21,6 +37,54 @@
 }
 
 .pupservation-header {
-    color: #392942;
-    text-shadow: white;
+    color: white;
+    text-shadow: gainsboro;
 }
+
+/* 
+  
+  .AddPupPage {
+    background-color: #214A77;  
+    text-align: center;
+    color: white;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    margin-top: 50px;
+  }
+  
+  .pup-name, 
+  .breed, 
+  .allergies, 
+  .hobbies, 
+  .parent-name,
+  .pup-image {
+    margin-bottom: 25px;
+  }
+  
+  @media only screen and (max-width: 768px) {
+    .AddPupPage--container{
+      min-width: 400px;
+    }
+    
+    .AddPupPage {
+      background-color: #214A77;  
+      text-align: center;
+      color: white;
+      width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 25px;
+      margin-top: 50px;
+    }
+  
+    input {
+      height: 25px;
+      width: 200px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+      border: 2px solid black;
+    }
+  } */

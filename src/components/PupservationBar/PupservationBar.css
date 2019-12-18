@@ -7,10 +7,23 @@
     border-top: 1px solid lightgray;
     padding: 20px;
     background: #214A77;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
 }
 
 .pupservationBar-link{
     text-decoration: none;
     font-weight: bolder;
     color: white;
+    text-shadow: 1px 1px gainsboro;
+}
+
+@media only screen and (min-width: 1000px) {
+    /* tablets and desktop */
+.pupservationBar-link{
+    font-size: 22px;
+}
 }

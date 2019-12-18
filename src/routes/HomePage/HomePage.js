@@ -5,6 +5,10 @@ import PupservationBar from '../../components/PupservationBar/PupservationBar';
 import puggy from '../../assets/images/puggy.jpg';
 import dogpup from '../../assets/images/dogpup.jpg';
 import corgi from '../../assets/images/corgi.jpg';
+import derp from '../../assets/images/derp.jpg';
+import eye from '../../assets/images/eye.jpg';
+import lab from '../../assets/images/lab.jpg';
+
 import UserAvatar from 'react-user-avatar';
 
 
@@ -28,13 +32,37 @@ class HomePage extends React.Component {
 
         <section className="dogAvatars">
           <div className="dogList">
-            <UserAvatar size="200" name="avatar" src={puggy} />
-            <h2 className='home-header'>Buster</h2>
-            <UserAvatar size="200" name="avatar" src={dogpup} />
-            <h2 className='home-header'>Pickles</h2>
-            <UserAvatar size="200" name="avatar" src={corgi} />
-            <h2 className='home-header'>Corgenius</h2>
-        </div>
+                <div class='row'>
+                  <div class='column'>
+                    <div class='one-column'>
+                       <UserAvatar size="100" name="avatar" src={puggy} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={derp} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={puggy} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={derp} class="avatar" />
+
+
+                    </div>
+                  </div>
+                  <div class='column'>
+                    <div class='two-column'>
+                       <UserAvatar size="100" name="avatar" src={dogpup} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={eye} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={dogpup} class="avatar" />
+                       <UserAvatar size="100" name="avatar" src={eye} class="avatar" />
+
+                    </div>
+                  </div>
+                      <div class='column'>
+                    <div class='three-column'>
+                      <UserAvatar size="100" name="avatar" src={corgi} class="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={lab} class="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={corgi} class="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={lab} class="avatar"/>
+
+                    </div>
+                  </div>
+                </div>
+          </div>          
         </section>
 
         <section>
