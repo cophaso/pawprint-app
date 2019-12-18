@@ -5,7 +5,7 @@ import './PupservationConfirm.css';
 export default function PupservationConfirm(){
     return(
         <div className='pupservationConfirm-container'>
-            <Link className='pupservationConfirm-link' to='/pupservations'>Submit</Link>
+            <Link className='pupservationConfirm-link' to='/profile'>Submit</Link>
         </div>
     )
 }

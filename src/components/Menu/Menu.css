@@ -1,3 +1,6 @@
 .hamburger-menu{
     font-size: 24px;
+    float: left;
+    margin-right: 0;
+    margin-left: 15px;
 }

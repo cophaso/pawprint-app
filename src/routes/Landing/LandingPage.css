@@ -1,15 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+@media only screen and (max-width: 767px) {
+    /* phones */
 .landingPage-container img{
-    width: 200px;
+    width: 100%;
+    max-height: 350px;
 }
 
 .landingPage-container h3{
     text-align: center;
 }
 
-.landingPage-section{
+.landingPage-section1{
+    height: 400px;
     padding: 25px;
+    background-color: #392942;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px gray;
+    font-size: larger;
 }
 
-.landingPage-img {
+.landingPage-section2{
+    height: 400px;
+    padding: 25px;
+    background-color:  #E6E6EB;
     text-align: center;
+    color: black;
+    text-shadow: 1px 1px white;
+    font-size: larger;
 }
+}
+
+
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .landingPage-container img{
+        width: 100%;
+        max-height: 700px;
+    }
+    
+    .landingPage-container h3{
+        text-align: center;
+    }
+    
+    .landingPage-section1{
+        height: 850px;
+        padding: 25px;
+        background-color: #392942;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px gray;
+        font-size: x-large;
+    }
+    
+    .landingPage-section2{
+        height: 850px;
+        padding: 25px;
+        background-color:  #E6E6EB;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px white;
+        font-size: x-large;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    /* tablets and desktop */
+    .landingPage-container img{
+        width: 75%;
+        height: 100%;
+    }
+    
+    .landingPage-container h3{
+        text-align: center;
+    }
+    
+    .landingPage-section1{
+        height: 100%;
+        padding: 50px;
+        background-color: #392942;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px gray;
+        font-size: x-large;
+    }
+    
+    .landingPage-section2{
+        height: 100%;
+        padding: 50px;
+        background-color:  #E6E6EB;
+        text-align: center;
+        color: black;
+        text-shadow: 1px 1px white;
+        font-size: x-large;
+    }
+}
+
+
