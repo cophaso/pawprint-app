@@ -2,34 +2,38 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    /* phones */
 .pupservationContainer {
     margin: 30px;
     background-color: #214A77;  
     color: white;
-    width: auto;
-    margin-left: 20px;
-    margin-right: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
     padding: 25px;
 }
 
-
 .pupservation-heading {
     text-align: center;
-    margin-bottom: 10px;
+    margin: 20px 0 20px 0;
+    font-size: 26px;
+
 }
 
 .Dropdown-control, .dateDropdown {
     width: 90%;
     margin: 0 auto;
+
 }
 .dropdown {
     display: inline-block;
+
 }
 
 .dropdown__content {
     display: none;
     position: absolute;
-
 }
 
 .dropdown--active .dropdown__content {
@@ -39,6 +43,102 @@
 .pupservation-header {
     color: white;
     text-shadow: gainsboro;
+    font-size: 20px;
+    padding-top: 10px;
+
+}
 }
 
 
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .pupservationContainer {
+        margin: 30px;
+        background-color: #214A77;  
+        color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+    }
+    
+    .pupservation-heading {
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-size: 26px;
+    
+    }
+    
+    .Dropdown-control, .dateDropdown {
+        width: 90%;
+        margin: 0 auto;
+    
+    }
+    .dropdown {
+        display: inline-block;
+    
+    }
+    
+    .dropdown__content {
+        display: none;
+        position: absolute;
+    }
+    
+    .dropdown--active .dropdown__content {
+        display: block;
+    }
+    
+    .pupservation-header {
+        color: white;
+        text-shadow: gainsboro;
+        font-size: 26px;
+        padding-top: 10px;
+    
+    }
+}
+  @media only screen and (min-width: 1000px) {
+      /* tablets and desktop */
+      .pupservationContainer {
+        margin: 30px;
+        background-color: #214A77;  
+        color: white;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 25px;
+    }
+    
+    .pupservation-heading {
+        text-align: center;
+        margin: 20px 0 20px 0;
+        font-size: 26px;
+    
+    }
+    
+    .Dropdown-control, .dateDropdown {
+        width: 90%;
+        margin: 0 auto;
+    
+    }
+    .dropdown {
+        display: inline-block;
+    
+    }
+    
+    .dropdown__content {
+        display: none;
+        position: absolute;
+    }
+    
+    .dropdown--active .dropdown__content {
+        display: block;
+    }
+    
+    .pupservation-header {
+        color: white;
+        text-shadow: gainsboro;
+        font-size: 26px;
+        padding-top: 10px;
+    
+    }
+  }

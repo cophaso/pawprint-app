@@ -1,6 +1,11 @@
-
+@media only screen and (max-width: 768px) {
+  /* phones */
+.profilePic {
+  width: 100%;
+  height: 300px;
+}
   .centered {
-    font-size: xx-large;
+    font-size: 24px;
     color: white;
     text-shadow: 1px 1px gray;
     background-color: #214A77;
@@ -9,7 +14,7 @@
 
 .dogName {
   text-align: center;
-  font-size: 24px;
+  font-size: 20px;
   padding-bottom: 10px;
   text-shadow: 1px 1px gainsboro;
 }
@@ -19,8 +24,87 @@
   color: #392942;
   padding: 10px;
   text-shadow: 1px 1px gainsboro;
+  font-size: 18px;
 }
 
 .aboutPup li {
   padding: 10px;
+  font-size: 16px;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .profilePic {
+    width: auto;
+    height: auto;
+    margin: 0 30% 0 30%;
+ 
+  }
+    .centered {
+      font-size: 26px;
+      color: white;
+      text-shadow: 1px 1px gray;
+      background-color: #214A77;
+    
+    }
+  
+  .dogName {
+    text-align: center;
+    font-size: 22px;
+    padding-bottom: 10px;
+    text-shadow: 1px 1px gainsboro;
+  }
+  
+  .sectionTitle {
+    background: #E6E6EB;
+    color: #392942;
+    padding: 10px;
+    text-shadow: 1px 1px gainsboro;
+    font-size: 22px;
+  }
+  
+  .aboutPup li {
+    padding: 10px;
+    font-size: 22px;
+  }
+}
+
+
+@media only screen and (min-width: 1000px) {
+    /* tablets and desktop */
+    .profilePic {
+      width: auto;
+      height: auto;
+      margin: 0 35% 0 35%;
+   
+    }
+      .centered {
+        font-size: 26px;
+        color: white;
+        text-shadow: 1px 1px gray;
+        background-color: #214A77;
+      
+      }
+    
+    .dogName {
+      text-align: center;
+      font-size: 22px;
+      padding-bottom: 10px;
+      text-shadow: 1px 1px gainsboro;
+    }
+    
+    .sectionTitle {
+      background: #E6E6EB;
+      color: #392942;
+      padding: 10px;
+      text-shadow: 1px 1px gainsboro;
+      font-size: 22px;
+    }
+    
+    .aboutPup li {
+      padding: 10px;
+      font-size: 22px;
+    }
 }

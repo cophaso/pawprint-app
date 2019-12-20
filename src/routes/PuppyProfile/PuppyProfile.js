@@ -18,8 +18,10 @@ class PuppyProfile extends React.Component {
             
         <section className="hero">
             <div className="centered">
-                <img src={dogpup}  />
-                <div className="dogName">Pickles</div>
+                <div className="dogImage">
+                    <img src={dogpup} className="profilePic"  />
+                    <div className="dogName">Pickles</div>
+                </div>
             </div>
         </section>
 

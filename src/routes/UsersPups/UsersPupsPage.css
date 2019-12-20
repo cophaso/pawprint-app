@@ -1,21 +1,155 @@
-.usersPupsPage-container main{
+* {
+  box-sizing: border-box;
+}
+
+@media only screen and (max-width: 768px) {
+  /* phones */
+  .usersPupsPage-container {
     text-align: center;
+    margin-top: 40px;
+
   }
   
 .usersPupsPage-container ul{
     padding: 0;
     list-style-type: none;
-  }
-  
-.usersPupsPage-container ul img{
-    width: 50px;
+    font-size: 18px;
   }
 
-.usersPupsPage-container footer{
-  width: 100%;
+.yourPupSectionTitle {
+  font-size: 22px;
 }
 
-.usersPupsPage-container footer button{
-  width: 100%;
+.usersPupsPage-container ul img{
+    width: 50px;
+    height: 50px;
+  }
+
+
+.usersPupsList-section {
+  background: #B8C5CD;
+  padding: 20px;
+}
+
+.yourPupBar{
   text-align: center;
+  border-top: 1px solid lightgray;
+  padding: 10px;
+  background: #214A77;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.yourPup-link{
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px gainsboro;
+  font-size: medium;
+}
+}
+
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .usersPupsPage-container {
+    text-align: center;
+    margin-top: 40px;
+
+  }
+  
+.usersPupsPage-container ul{
+    padding: 0;
+    list-style-type: none;
+    font-size: 22px;
+  }
+
+.yourPupSectionTitle {
+  font-size: 26px;
+}
+
+.usersPupsPage-container ul img{
+    width: 70px;
+    height: 70px;
+  }
+
+
+.usersPupsList-section {
+  background: #B8C5CD;
+  padding: 40px;
+  margin: 10px 40px;
+}
+
+.yourPupBar{
+  text-align: center;
+  border-top: 1px solid lightgray;
+  padding: 30px;
+  background: #214A77;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+}
+
+.yourPup-link{
+  text-decoration: none;
+  font-weight: bolder;
+  color: white;
+  text-shadow: 1px 1px gainsboro;
+  font-size: 24px;
+}
+}
+
+@media only screen and (min-width: 1000px) {
+    /* tablets and desktop */
+    .usersPupsPage-container {
+      text-align: center;
+      margin-top: 40px;
+    }
+    
+  .usersPupsPage-container ul{
+      padding: 0;
+      list-style-type: none;
+      font-size: 22px;
+    }
+  
+  .yourPupSectionTitle {
+    font-size: 30px;
+  }
+  
+  .usersPupsPage-container ul img{
+      width: 100px;
+      height: 100px;
+    }
+  
+  
+  .usersPupsList-section {
+    background: #B8C5CD;
+    padding: 40px;
+    margin: 10px 40px;
+  }
+  
+  .yourPupBar{
+    text-align: center;
+    border-top: 1px solid lightgray;
+    padding: 30px;
+    background: #214A77;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+  }
+  
+  .yourPup-link{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    text-shadow: 1px 1px gainsboro;
+    font-size: 24px;
+  }
 }

@@ -28,7 +28,7 @@ export default class AddPupForm extends Component {
           <label>Add an Image of Your Pup</label>
           <input type="file" name="pic" accept="image/*" />
         </section>
-        <button type='submit'>Save Pup</button>
+        <button type='submit' className='savePupButton'>Save Pup</button>
       </form>
     )
   }
