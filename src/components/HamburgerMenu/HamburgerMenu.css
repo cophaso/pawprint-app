@@ -1,0 +1,75 @@
+ul li {
+    list-style-type: none;
+}
+
+#page-wrap {
+    text-align: center;
+  
+    /* Prevent sidebar from showing a scrollbar on page */
+    overflow: auto;
+  }
+
+  .bm-menu-wrap{
+      margin: -25px;
+  }
+  
+  /* Individual item */
+  .bugerLink {  
+    /* Our sidebar item styling */
+    text-decoration: none;
+    margin-bottom: 10px;
+    color: black;
+    transition: color 0.2s;
+  }
+  
+  /* Change color on hover */
+  .bm-item:hover {
+    color: white;
+  }
+  
+  /* Position and sizing of burger button */
+  .bm-burger-button {
+    position: fixed;
+    width: 36px;
+    height: 30px;
+    left: 25px;
+    top: 25px;
+  }
+  
+  /* Color/shape of burger icon bars */
+  .bm-burger-bars {
+    background: black;
+  }
+  
+  /* Position and sizing of clickable cross button */
+  .bm-cross-button {
+    margin: 10px;
+    height: 24px;
+    width: 24px;
+  }
+  
+  /* Color/shape of close button cross */
+  .bm-cross {
+    background: black;
+  }
+  
+  /* General sidebar styles */
+  .bm-menu {
+    background: whitesmoke;
+    padding: 25px 0;
+    font-size: 24px;
+  }
+
+  .bm-menu nav {
+      height: auto !important;
+  }
+  
+  /* Wrapper for item list */
+  .bm-item-list {
+    color: black;
+  }
+  
+  /* Styling of overlay */
+  .bm-overlay {
+    background: whitesmoke;
+  }

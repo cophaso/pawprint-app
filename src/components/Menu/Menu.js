@@ -1,13 +1,11 @@
 import React from 'react'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBars } from '@fortawesome/free-solid-svg-icons'
-import {Link} from 'react-router-dom'
 import './Menu.css'
+import HamburgerMenu from '../HamburgerMenu/HamburgerMenu'
 
 export default function Menu(){
     return (
         <div className='hamburger-menu'>
-            <Link to='/menu'><FontAwesomeIcon icon={faBars} /></Link>
+            <HamburgerMenu pageWrapId={"page-wrap"} outerContainerId={"App"} />
         </div>
     )
 }
