@@ -14,9 +14,9 @@ export default class LoginForm extends Component {
           <input type="password" name='password' id='password' />
         </div>
         <div className="signup-bt">
-          <button>Sign Up?</button>
+        <NavLink to='/signup'><button type='button' className="loginbuttons">Sign Up?</button></NavLink>
         </div>
-        <NavLink to='/home'><button type='submit'>Submit</button></NavLink>
+        <NavLink to='/home'><button type='submit' className="loginbuttons">Submit</button></NavLink>
       </form>
     )
   }

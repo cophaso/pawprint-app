@@ -1,11 +1,40 @@
-body {
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+
+@media only screen and (max-width: 768px) {
+  /* phones */
+  
+  .LoginPage {
+    background-color: #214A77;  
+    text-align: center;
+    color: white;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    
+  }
+
+  input {
+    height: 25px;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+  }
+  
+  .loginbuttons {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin: 10px 20px 0 0;
+}
 }
 
-.LoginPage--container{
-  min-width: 700px;
-}
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+
 
 .LoginPage {
   background-color: #214A77;  
@@ -15,7 +44,6 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 25px;
-  margin-top: 50px;
 }
 
 .LoginForm{
@@ -24,7 +52,7 @@ body {
 
 input {
   height: 25px;
-  width: 300px;
+  width: 80%;
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -35,38 +63,51 @@ input {
   margin-bottom: 25px;
 }
 
-button {
-  font-size: 1em;
+.loginbuttons {
+  font-size: 16px;
   border-radius: 4px;
   padding: 5px 10px;
-  font-weight: 500;
   background: #E6E6EB;
   color: #214A77;
   margin-top: 10px;
 }
+}
 
-@media only screen and (max-width: 768px) {
-  .LoginPage--container{
-    min-width: 400px;
-  }
-  
+@media only screen and (min-width: 1000px) {
+  /* tablets and desktop */
   .LoginPage {
     background-color: #214A77;  
     text-align: center;
     color: white;
-    width: 300px;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    margin-top: 50px;
   }
-
+  
+  .LoginForm{
+    display: block;
+  }
+  
   input {
     height: 25px;
-    width: 200px;
+    width: 300px;
     display: block;
     margin-right: auto;
     margin-left: auto;
     border: 2px solid black;
   }
-}
+  
+  .email, .password{
+    margin-bottom: 25px;
+  }
+  
+  .loginbuttons {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin-top: 10px;
+  }
+}  

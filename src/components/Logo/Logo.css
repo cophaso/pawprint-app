@@ -1,4 +1,7 @@
-.logo{
+@media only screen and (max-width: 767px) {
+  /* phones */
+
+  .logo{
   display: flex;
   color: black;
   text-decoration: none;
@@ -7,20 +10,87 @@
 }
 
 .logo img{
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   margin-left: 25%;
 }
 
 .logo-title {
-  width: 200px;
+  width: 250px;
 }
 .logo-title h1{
   margin: 0 15px 0 15px;
   padding: 0;
+  font-size: 14px;
 }
 
 .logo-title p{
   margin: 0 15px 0 15px;
   padding: 0;
+  font-size: 12px;
+}
+}
+
+@media only screen and (min-width: 768px) {
+  /* tablets and desktop */
+  .logo{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: black;
+    text-decoration-style: none;
+  }
+  
+  .logo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 25%;
+  }
+  
+  .logo-title {
+    width: 250px;
+  }
+  .logo-title h1{
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  .logo-title p{
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* tablets and desktop */
+  .logo{
+    display: flex;
+    color: black;
+    text-decoration: none;
+    text-decoration-color: black;
+    text-decoration-style: none;
+  }
+  
+  .logo img{
+    width: 40px;
+    height: 40px;
+    margin-left: 25%;
+  }
+  
+  .logo-title {
+    width: 400px;
+  }
+  .logo-title h1{
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 20px;
+  }
+  
+  .logo-title p{
+    margin: 0 15px 0 15px;
+    padding: 0;
+    font-size: 15px;
+  }
 }
