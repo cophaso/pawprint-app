@@ -49,7 +49,7 @@ class PupservationPage extends React.Component {
 
         <h3 className='pupservation-header'>Services:</h3>
         <Dropdown options={options2} onChange={this._onSelect} value={defaultOption2} placeholder="Select an option" />
-
+        
         <PupservationConfirm />
         </div>
         </div>

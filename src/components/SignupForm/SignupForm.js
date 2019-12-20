@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default class SignupForm extends Component {
 
@@ -6,14 +7,16 @@ export default class SignupForm extends Component {
     return (
       <form className='SignupForm'>
         <div className='email'>
-          <label htmlfor="email">Email</label>
+          <label htmlFor="email">Email</label>
           <input type="text" name='email' id='email' />
         </div>
         <div className="password">
-          <label for="password">Password</label>
+          <label htmlFor="password">Password</label>
           <input type="password" name='password' id='password' />
         </div>
-        <button type='submit'>Submit</button>
+        <NavLink to='/login'><button type='button' className="loginbuttons">Login?</button></NavLink>
+
+        <button type='submit' className="signUpButtons">Submit</button>
       </form>
     )
   }

@@ -1,12 +1,26 @@
-body {
-    font-size: 14px;
-    font-family: 'Roboto', sans-serif;
-  }
-  
 
-.centered {
+  .centered {
     font-size: xx-large;
     color: white;
     text-shadow: 1px 1px gray;
     background-color: #214A77;
+  
   }
+
+.dogName {
+  text-align: center;
+  font-size: 24px;
+  padding-bottom: 10px;
+  text-shadow: 1px 1px gainsboro;
+}
+
+.sectionTitle {
+  background: #E6E6EB;
+  color: #392942;
+  padding: 10px;
+  text-shadow: 1px 1px gainsboro;
+}
+
+.aboutPup li {
+  padding: 10px;
+}

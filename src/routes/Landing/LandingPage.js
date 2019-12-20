@@ -24,6 +24,11 @@ export default function LandingPage(){
                     </section>
 
                     <section className='landingPage-section2'>
+                        <h4>Find out who's visiting the office and help your team know you're bringing your furbaby to work.
+                        </h4>
+                    </section>
+
+                    <section className='landingPage-section3'>
                         <header>
                             <h3>Make Appointments</h3>
                         </header>
@@ -32,6 +37,7 @@ export default function LandingPage(){
                         </div>
                         <h4>Schedule a play date or a grooming appointment easily</h4>
                     </section>
+
                 </section>
 
                 <section className='landingPage-login'>

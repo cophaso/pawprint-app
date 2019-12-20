@@ -2,10 +2,12 @@
     box-sizing: border-box;
 }
 
+@media only screen and (max-width: 768px) {
+    /* phones */ 
 .loginBar-container{
     text-align: center;
     border-top: 1px solid lightgray;
-    padding: 20px;
+    padding: 10px;
     background: #214A77;
     position: fixed;
     left: 0;
@@ -19,11 +21,53 @@
     font-weight: bolder;
     color: white;
     text-shadow: 1px 1px gainsboro;
+    font-size: medium;
+}
+}
+
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
+    .loginBar-container{
+        text-align: center;
+        border-top: 1px solid lightgray;
+        padding: 30px;
+        background: #214A77;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+    }
+    
+    .loginBar-link{
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 1px 1px gainsboro;
+        font-size: 26px;
+    }
 }
 
 @media only screen and (min-width: 1000px) {
     /* tablets and desktop */
-.loginBar-link{
-    font-size: 22px;
-}
+    .loginBar-container{
+        text-align: center;
+        border-top: 1px solid lightgray;
+        padding: 20px;
+        background: #214A77;
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+    }
+    
+    .loginBar-link{
+        text-decoration: none;
+        font-weight: bolder;
+        color: white;
+        text-shadow: 1px 1px gainsboro;
+        font-size: 22px;
+    }
+
 }

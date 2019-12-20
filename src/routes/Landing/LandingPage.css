@@ -1,12 +1,9 @@
-* {
-    box-sizing: border-box;
-}
+
 
 @media only screen and (max-width: 767px) {
     /* phones */
 .landingPage-container img{
     width: 100%;
-    max-height: 350px;
 }
 
 .landingPage-container h3{
@@ -14,23 +11,35 @@
 }
 
 .landingPage-section1{
-    height: 400px;
-    padding: 25px;
+    height: auto;
+    padding: 20px;
     background-color: #392942;
     text-align: center;
     color: white;
-    text-shadow: 1px 1px gray;
-    font-size: larger;
+    text-shadow: 1px 1px gainsboro;
+    font-size: 20px;
 }
 
 .landingPage-section2{
-    height: 400px;
-    padding: 25px;
     background-color:  #E6E6EB;
+    height: auto;
+    padding: 20px;
     text-align: center;
     color: black;
     text-shadow: 1px 1px white;
-    font-size: larger;
+    font-size: 20px;
+}
+
+
+.landingPage-section3{
+    height: auto;
+    padding: 20px;
+    background-color: #392942;
+    text-align: center;
+    color: white;
+    text-shadow: 1px 1px gainsboro;
+    font-size: 20px;
+    margin-bottom: 50px;
 }
 }
 
@@ -39,8 +48,7 @@
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
     .landingPage-container img{
-        width: 100%;
-        max-height: 700px;
+        width: 90%;
     }
     
     .landingPage-container h3{
@@ -48,23 +56,34 @@
     }
     
     .landingPage-section1{
-        height: 850px;
+        height: auto;
         padding: 25px;
         background-color: #392942;
         text-align: center;
         color: white;
         text-shadow: 1px 1px gray;
-        font-size: x-large;
+        font-size: 28px;
     }
     
     .landingPage-section2{
-        height: 850px;
+        height: auto;
         padding: 25px;
         background-color:  #E6E6EB;
         text-align: center;
         color: black;
         text-shadow: 1px 1px white;
-        font-size: x-large;
+        font-size: 28px;
+    }
+    .landingPage-section3{
+        background-color:  #392942;
+        height: auto;
+        padding: 50px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px gainsboro;
+        font-size: 28px;
+        margin-bottom: 50px;
+
     }
 }
 
@@ -80,7 +99,7 @@
     }
     
     .landingPage-section1{
-        height: 100%;
+        height: auto;
         padding: 50px;
         background-color: #392942;
         text-align: center;
@@ -88,14 +107,24 @@
         text-shadow: 1px 1px gray;
         font-size: x-large;
     }
-    
+
     .landingPage-section2{
-        height: 100%;
+        height: auto;
         padding: 50px;
         background-color:  #E6E6EB;
         text-align: center;
         color: black;
         text-shadow: 1px 1px white;
+        font-size: x-large;
+    }
+
+    .landingPage-section3{
+        background-color:  #392942;
+        height: auto;
+        padding: 50px;
+        text-align: center;
+        color: white;
+        text-shadow: 1px 1px gainsboro;
         font-size: x-large;
     }
 }

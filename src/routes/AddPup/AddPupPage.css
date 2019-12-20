@@ -1,26 +1,3 @@
-.AddPupPage--container{
-  min-width: 700px;
-}
-
-.AddPupPage {
-  background-color: #214A77;  
-  text-align: center;
-  color: white;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px;
-  margin-top: 50px;
-}
-
-.pup-name, 
-.breed, 
-.allergies, 
-.hobbies, 
-.parent-name,
-.pup-image {
-  margin-bottom: 25px;
-}
 
 @media only screen and (max-width: 768px) {
   .AddPupPage--container{
@@ -45,5 +22,15 @@
     margin-right: auto;
     margin-left: auto;
     border: 2px solid black;
+    background-color: white;
   }
+
+.pup-name, 
+.breed, 
+.allergies, 
+.hobbies, 
+.parent-name,
+.pup-image {
+  margin-bottom: 25px;
+}
 }

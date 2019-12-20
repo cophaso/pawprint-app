@@ -19,13 +19,13 @@ class PuppyProfile extends React.Component {
         <section className="hero">
             <div className="centered">
                 <img src={dogpup}  />
-                Pickles
+                <div className="dogName">Pickles</div>
             </div>
         </section>
 
         <section className="about">
-            <h3>About:</h3>
-                <ul>
+            <h3 className='sectionTitle'>About:</h3>
+                <ul className='aboutPup'>
                     <li>Breed:</li>
                     <li>Allergies:</li>
                     <li>Hobbies:</li>
@@ -34,8 +34,8 @@ class PuppyProfile extends React.Component {
         </section>
 
         <section className="visits">
-            <h3>Office Visits:</h3>
-                <ul>
+            <h3 className='sectionTitle'>Office Visits:</h3>
+                <ul className='aboutPup'>
                     <li>Tues, Dec. 23rd</li>
                     <li>Wed, Dec. 24th</li>
                     <li>Fri, Dec 28th:</li>
@@ -43,8 +43,8 @@ class PuppyProfile extends React.Component {
         </section>
 
         <section className="services">
-            <h3>Services:</h3>
-                <ul>
+            <h3 className='sectionTitle'>Services:</h3>
+                <ul className='aboutPup'>
                     <li>Grooming: Dec. 23rd</li>
                 </ul>
         </section>
