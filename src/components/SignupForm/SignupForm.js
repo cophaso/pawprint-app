@@ -6,6 +6,10 @@ export default class SignupForm extends Component {
   render() {
     return (
       <form className='SignupForm'>
+        <div className='name'>
+          <label htmlFor="name">Name</label>
+          <input type="text" name='name' id='name' />
+        </div>
         <div className='email'>
           <label htmlFor="email">Email</label>
           <input type="text" name='email' id='email' />
