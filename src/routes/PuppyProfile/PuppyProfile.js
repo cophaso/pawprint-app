@@ -6,11 +6,6 @@ import dogpup from '../../assets/images/dogpup.jpg';
 
 
 class PuppyProfile extends React.Component {
-    constructor(props) {
-      super(props);
-    }
-  
-  
     render() {
       return (
         <div>
@@ -19,7 +14,7 @@ class PuppyProfile extends React.Component {
         <section className="hero">
             <div className="centered">
                 <div className="dogImage">
-                    <img src={dogpup} className="profilePic"  />
+                    <img src={dogpup} className="profilePic" alt ='' />
                     <div className="dogName">Pickles</div>
                 </div>
             </div>

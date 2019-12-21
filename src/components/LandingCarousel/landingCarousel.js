@@ -11,15 +11,15 @@ export default class LandingCarousel extends Component {
             <div className='carousel'>
             <Carousel autoPlay>
                     <div>
-                        <img src={derp} />
+                        <img src={derp} alt ='' />
                         <p className="legend">Snickers</p>
                     </div>
                     <div>
-                        <img src={smartpup} />
+                        <img src={smartpup} alt ='' />
                         <p className="legend">Janet</p>
                     </div>
                     <div>
-                        <img src={puggy} />
+                        <img src={puggy} alt ='' />
                         <p className="legend">Elvis</p>
                     </div>
     

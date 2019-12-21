@@ -10,7 +10,6 @@
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    
   }
 
   input {
@@ -29,49 +28,57 @@
     background: #E6E6EB;
     color: #214A77;
     margin: 10px 20px 0 0;
-}
+  }
+
+  .red {
+    color: red;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   /* tablets and desktop */
 
+  .LoginPage {
+    background-color: #214A77;  
+    text-align: center;
+    color: white;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+  }
 
-.LoginPage {
-  background-color: #214A77;  
-  text-align: center;
-  color: white;
-  width: 700px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 25px;
+  .LoginForm{
+    display: block;
+  }
+
+  input {
+    height: 25px;
+    width: 80%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid black;
+  }
+
+  .email, .password{
+    margin-bottom: 25px;
+  }
+
+  .loginbuttons {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin-top: 10px;
+  }
+
+  .red {
+    color: red;
+  }
 }
 
-.LoginForm{
-  display: block;
-}
-
-input {
-  height: 25px;
-  width: 80%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  border: 2px solid black;
-}
-
-.email, .password{
-  margin-bottom: 25px;
-}
-
-.loginbuttons {
-  font-size: 16px;
-  border-radius: 4px;
-  padding: 5px 10px;
-  background: #E6E6EB;
-  color: #214A77;
-  margin-top: 10px;
-}
-}
 
 @media only screen and (min-width: 1000px) {
   /* tablets and desktop */
@@ -109,5 +116,9 @@ input {
     background: #E6E6EB;
     color: #214A77;
     margin-top: 10px;
+  }
+
+  .red {
+    color: red;
   }
 }  

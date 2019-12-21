@@ -32,32 +32,32 @@ class HomePage extends React.Component {
 
         <section className="dogAvatars">
           <div className="dogList">
-                <div class='row'>
-                  <div class='column'>
-                    <div class='one-column'>
-                       <UserAvatar size="100" name="avatar" src={puggy} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={derp} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={puggy} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={derp} class="avatar" />
+                <div className='row'>
+                  <div className='column'>
+                    <div className='one-column'>
+                       <UserAvatar size="100" name="avatar" src={puggy} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={derp} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={puggy} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={derp} className="avatar" />
 
 
                     </div>
                   </div>
-                  <div class='column'>
-                    <div class='two-column'>
-                       <UserAvatar size="100" name="avatar" src={dogpup} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={eye} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={dogpup} class="avatar" />
-                       <UserAvatar size="100" name="avatar" src={eye} class="avatar" />
+                  <div className='column'>
+                    <div className='two-column'>
+                       <UserAvatar size="100" name="avatar" src={dogpup} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={eye} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={dogpup} className="avatar" />
+                       <UserAvatar size="100" name="avatar" src={eye} className="avatar" />
 
                     </div>
                   </div>
-                      <div class='column'>
-                    <div class='three-column'>
-                      <UserAvatar size="100" name="avatar" src={corgi} class="avatar"/>
-                      <UserAvatar size="100" name="avatar" src={lab} class="avatar"/>
-                      <UserAvatar size="100" name="avatar" src={corgi} class="avatar"/>
-                      <UserAvatar size="100" name="avatar" src={lab} class="avatar"/>
+                      <div className='column'>
+                    <div className='three-column'>
+                      <UserAvatar size="100" name="avatar" src={corgi} className="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={lab} className="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={corgi} className="avatar"/>
+                      <UserAvatar size="100" name="avatar" src={lab} className="avatar"/>
 
                     </div>
                   </div>
