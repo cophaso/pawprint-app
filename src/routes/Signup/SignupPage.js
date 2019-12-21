@@ -10,12 +10,11 @@ export default class SignupPage extends Component {
         push: () => {},
       },
     }
-  
-    handleSignupSuccess = () => {
+
+    handleRegistrationSuccess = user => {
       const { location, history } = this.props
       const destination = (location.state || {}).from || '/home'
       history.push(destination)
-      window.location.reload()
     }
   
     render() {
@@ -23,11 +22,10 @@ export default class SignupPage extends Component {
         <>
         <NavBar />
         <div className='SignupPage--container'>
-          
           <div className='SignupPage'>
             <h2>Sign Up</h2>
             <SignupForm
-              onSignupSuccess={this.handleSignupSuccess}
+              onRegistrationSuccess={this.handleRegistrationSuccess}
             />
           </div>
         </div>
