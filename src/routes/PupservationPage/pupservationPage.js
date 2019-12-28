@@ -6,7 +6,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import PupservationConfirm from '../../components/PupservationConfirm/PupservationConfirm';
-import config from '../../config';
+// import config from '../../config';
 
 class PupservationPage extends React.Component {
     state = {

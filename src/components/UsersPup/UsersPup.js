@@ -6,7 +6,7 @@ export default function UsersPup(props){
         <>
             <li>
                 <img src={props.img} alt='placeholder pup' />
-                <p>{props.pupsName}</p>
+                <p>{props.pup_name}</p>
             </li>
         </>
     )
