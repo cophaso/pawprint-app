@@ -15,6 +15,19 @@ const PupsApiService = {
           : res.json()
       )
   },
+  getPup(pupId){
+    return fetch(`${config.API_ENDPOINT}/pups/${pupId}`, {
+      headers: {
+        'content-type': 'application/json',
+        'authorization': `bearer ${TokenService.getAuthToken()}`
+      }
+    })
+      .then(res =>
+        (!res.ok)
+          ? res.json().then(e => Promise.reject(e))
+          : res.json()
+      )
+  },
   postPups({ email, password }) {
     return fetch(`${config.API_ENDPOINT}/auth/login`, {
       method: 'POST',
