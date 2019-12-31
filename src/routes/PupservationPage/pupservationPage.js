@@ -8,20 +8,36 @@ import 'react-dropdown/style.css';
 import PupservationConfirm from '../../components/PupservationConfirm/PupservationConfirm';
 import config from '../../config';
 
-class PupservationPage extends React.Component {
-    state = {
-      startDate: new Date(),
-      pup_name: "", 
-      service_type: "",
-    };
+    /* a;skdfj;alksjdf;kaj;dfj;aksjdflkja; */
 
-  // sets the date for the date picker
-  handleChange = date => {
+class PupservationPage extends React.Component {
+  state = {
+    startDate: new Date(),
+    pups: [], 
+    services: [],
+    selectedPup: "",
+    validationError: ""
+  }
+ 
+    // sets the date for the date picker
+    handleChange = date => {
       this.setState({
         startDate: date
       });
     };
 
+  componentDidMount() {
+    fetch(`${config.API_ENDPOINT}/pups`)
+      .then((response) => {
+        return response.json();
+      })
+      .then(data => {
+        let pupsFromApi = data.map(pup => { return {value: pup, display: pup }})
+        this.setState({ pups: [{value: '', display: '(Select your pup)'}].concat(pupsFromApi) });
+      }).catch(error => {
+        console.log(error);
+      });
+  }
    
     render() {
 
@@ -43,7 +59,7 @@ class PupservationPage extends React.Component {
             'Buster', 'Pickles', 'Kevin'
         ];
         const options2 = [ 
-          // services are always the same
+          // services are always the same options
             'Grooming', 'Vet', 'Daycare'
         ];
           const defaultOption = options[0];
