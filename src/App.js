@@ -32,7 +32,7 @@ class App extends Component {
             <Route path={'/home'} component={HomePage} />
             <Route path={'/yourpups'} render={() => <UsersPupsPage pups={pups} />} />
             <Route path={'/pupservations'} component={PupservationPage} />
-            <Route path={'/profile'} component={PuppyProfile} />
+            <Route exact path={'/profile/:pup_id'} component={PuppyProfile} />
             <Route path={'/addpup'} component={AddPupPage} />
           </Switch>
         </main>
