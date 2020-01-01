@@ -28,13 +28,13 @@ const PupsApiService = {
           : res.json()
       )
   },
-  postPups({ email, password }) {
-    return fetch(`${config.API_ENDPOINT}/auth/login`, {
+  postPups({ pup_name, breed, allergies, hobbies, parent_id, image_url}) {
+    return fetch(`${config.API_ENDPOINT}/pups`, {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
       },
-      body: JSON.stringify({ email, password }),
+      body: JSON.stringify({ pup_name, breed, allergies, hobbies, parent_id, image_url }),
     })
       .then(res => res.json())
   }

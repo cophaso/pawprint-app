@@ -1,12 +1,59 @@
 import React, { Component } from 'react'
+import PupsApiService from '../../services/pups-api-service';
 
 export default class AddPupForm extends Component {
+ constructor(props) {
+  super(props);
+  this.state = {
+    pups: [],
+    error: null
+  };
+ }
+
+ static defaultProps = {
+  location: {},
+  history: {
+    push: () => {},
+  },
+}
+
+     handleSubmit = ev =>{
+      ev.preventDefault()
+  
+      this.setState({error: null})
+
+      const { pup_name, breed, allergies, hobbies, image_url} = ev.target
+  
+      PupsApiService.postPups({
+        pup_name: pup_name.value,
+        breed: breed.value,
+        allergies: allergies.value,
+        hobbies: hobbies.value,
+        parent_id: localStorage.getItem('user_id'),
+        image_url: image_url.value
+      })
+      .then(res => {
+          pup_name.value = ''
+          breed.value = ''
+          allergies.value = ''
+          hobbies.value = ''
+          image_url.value = ''
+
+        })
+      .catch(res => {
+        throw new Error(res.error);
+      })
+    }
+
+  
   render() {
+
     return (
-      <form className='AddPupForm'>
+      <form className='AddPupForm'
+      onSubmit={e => this.handleSubmit(e)}>
         <section className='pup-name'>
           <label>Pup's Name</label>
-          <input type='text' name='pup-name' />
+          <input type='text' name='pup_name' />
         </section>
         <section className='breed'>
           <label>Breed</label>
@@ -20,15 +67,14 @@ export default class AddPupForm extends Component {
           <label>Hobbies</label>
           <input type='text' name='hobbies' />
         </section>
-        <section className='parent-name'>
-          <label>Parent Name</label>
-          <input type='text' name='parent-name' />
+        <section className='image_url'>
+          <label>Add an Image URL of Your Pup</label>
+          <input type="text" name='image_url' />
         </section>
-        <section className='pup-image'>
-          <label>Add an Image of Your Pup</label>
-          <input type="file" name="pic" accept="image/*" />
-        </section>
-        <button type='submit' className='savePupButton'>Save Pup</button>
+        <button 
+          type='submit' 
+          className='savePupButton' 
+          onClick={this.props.history.push('/yourpups')}>Save Pup</button>
       </form>
     )
   }

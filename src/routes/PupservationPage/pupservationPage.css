@@ -21,9 +21,10 @@
 
 }
 
-.Dropdown-control, .dateDropdown {
+.Dropdown-control, .dateDropdown, select {
     width: 90%;
     margin: 0 auto;
+    background-color: white;
 
 }
 .dropdown {
