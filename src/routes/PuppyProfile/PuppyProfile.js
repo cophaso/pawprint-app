@@ -2,12 +2,33 @@ import React from 'react';
 import './PuppyProfile.css';
 import NavBar from '../../components/NavBar/NavBar';
 import dogpup from '../../assets/images/dogpup.jpg';
-
+import PupsApiService from '../../services/pups-api-service';
+import ServicesApiService from '../../services/services-api-service';
 
 
 class PuppyProfile extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+          pup: [],
+          pupId: 1,
+        };
+      }
+
+    componentDidMount(){
+        const {pupId} = this.state
+
+        PupsApiService.getPup(pupId)
+            .then(pup =>{
+                this.setState({pup: pup})
+            })
+
+        //ServicesApiService.getServices()
+    }
+
     render() {
-      return (
+        const {pup} = this.state
+        return (
         <div>
             <NavBar />
             
@@ -15,7 +36,7 @@ class PuppyProfile extends React.Component {
             <div className="centered">
                 <div className="dogImage">
                     <img src={dogpup} className="profilePic" alt ='' />
-                    <div className="dogName">Pickles</div>
+                    <div className="dogName">{pup.pup_name}</div>
                 </div>
             </div>
         </section>
@@ -23,9 +44,9 @@ class PuppyProfile extends React.Component {
         <section className="about">
             <h3 className='sectionTitle'>About:</h3>
                 <ul className='aboutPup'>
-                    <li>Breed:</li>
-                    <li>Allergies:</li>
-                    <li>Hobbies:</li>
+                    <li>Breed: {pup.breed}</li>
+                    <li>Allergies: {pup.allergies}</li>
+                    <li>Hobbies: {pup.hobbies}</li>
                     <li>Parent:</li>
                 </ul>
         </section>
