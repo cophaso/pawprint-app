@@ -6,7 +6,7 @@ import PupsApiService from '../../services/pups-api-service';
 
 class PuppyProfile extends React.Component {
     static defaultProps = {
-        match: { params: {} },
+        match: { params: {}, },
     }
     
     constructor(props) {
@@ -17,8 +17,8 @@ class PuppyProfile extends React.Component {
       }
 
     componentDidMount(){
-        const {pupId} = this.props.match.params
-
+        const pupId = this.props.match.params.pup_id
+        console.log(pupId)
         PupsApiService.getPup(pupId)
             .then(pup =>{
                 this.setState({pup: pup})
@@ -27,8 +27,7 @@ class PuppyProfile extends React.Component {
 
     render() {
         const {pup} = this.state
-        const parent = pup.parent
-        console.log(parent)
+
         return (
         <div>
             <NavBar />
@@ -48,7 +47,7 @@ class PuppyProfile extends React.Component {
                     <li>Breed: {pup.breed}</li>
                     <li>Allergies: {pup.allergies}</li>
                     <li>Hobbies: {pup.hobbies}</li>
-                    
+                    <PupParent parent={pup.parent} />
                 </ul>
         </section>
 
@@ -71,8 +70,13 @@ class PuppyProfile extends React.Component {
         </div>
       );
     }
-  }
+}
   
+function PupParent({parent = []}){
+    return(
+    <li key={parent.id}>Parent: {parent.user_name}</li>
+    )
+}
   
   
 export default PuppyProfile;
