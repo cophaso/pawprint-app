@@ -3,14 +3,10 @@ import './pupservationPage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
-import PupservationConfirm from '../../components/PupservationConfirm/PupservationConfirm';
-import config from '../../config';
-import { render } from 'react-dom';
 import PupsApiService from '../../services/pups-api-service';
+import PupServicesApiService from '../../services/pup-services-api-service';
 
-    /* a;skdfj;alksjdf;kaj;dfj;aksjdflkja; */
 
 class PupservationPage extends React.Component {
   constructor(props) {
@@ -20,8 +16,13 @@ class PupservationPage extends React.Component {
     pups: [], 
     services: [],
     error: null
-  };
-}
+    };
+  }
+
+  componentDidMount() {
+    PupsApiService.getPups()
+      .then( puppers => this.setState({pups: puppers}) )
+  }
 
     // sets the date for the date picker
     handleChange = date => {
@@ -31,51 +32,29 @@ class PupservationPage extends React.Component {
     };
 
     // NEED TO MAKE SEPARATE PUPS-SERVICES-API-SERVICE......
-    // handleSubmit = ev =>{
-    //   ev.preventDefault()
+    handleSubmit = ev =>{
+      ev.preventDefault()
   
-    //   this.setState({error: null})
+      this.setState({error: null})
   
-    //   const {dateList, pupList, serviceList} = ev.target
+      const {dateList, pupList, serviceList, note} = ev.target
   
-    //   PupsApiService.postLogin({
-    //     appt_date: email.value,
-    //     password: password.value,
-    //   })
-    //   .then(res => {
-    //     if(typeof res.authToken !== 'undefined') {
-    //       localStorage.setItem('user_id', res.id)
-    //       email.value = ''
-    //       password.value = ''
-    //       TokenService.saveAuthToken(res.authToken)
-    //       this.props.onLoginSuccess()
-    //     }
-    //     else {
-    //       this.setState({error: res.error})
-    //     }
-    //   })
-    //   .catch(res => {
-    //     throw new Error(res.error);
-    //   })
-    // }
-
-
-  componentDidMount() {
-    
-    PupsApiService.getPups()
-      .then( puppers => this.setState({pups: puppers}) )
-  }
-
+      PupServicesApiService.postPupService({
+        appt_date: dateList.value,
+        service_type: serviceList.value,
+        note: note.value,
+        pup_id: pupList.value
+      })
+      .then(res => {
+          note.value = ''
+          
+      })
+      .catch(res => {
+        throw new Error(res.error);
+      })
+    }
    
     render() {
-        console.log(this.state.pups);
-
-        const options2 = [ 
-          // services are always the same options
-            'Grooming', 'Vet', 'Daycare'
-        ];
-        const defaultOption2 = options2[0];
-
         const dropPups = this.state.pups.map((pup, i) => {
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>
@@ -111,8 +90,16 @@ class PupservationPage extends React.Component {
                 <option value='Vet'>Vet</option>
                 <option value='Daycare'>Daycare</option>
               </select>
+
+              <section className='note'>
+                <label>Note</label>
+                <input type='text' name='note' />
+              </section>
               
-              <PupservationConfirm />
+              <button 
+                type='submit' 
+                className='savePupServiceButton' 
+                >Save Service</button>
           </form>
         </div>
         </div>
