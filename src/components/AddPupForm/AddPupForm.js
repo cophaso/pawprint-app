@@ -10,13 +10,6 @@ export default class AddPupForm extends Component {
   };
  }
 
- static defaultProps = {
-  location: {},
-  history: {
-    push: () => {},
-  },
-}
-
      handleSubmit = ev =>{
       ev.preventDefault()
   
@@ -32,12 +25,13 @@ export default class AddPupForm extends Component {
         parent_id: localStorage.getItem('user_id'),
         image_url: image_url.value
       })
-      .then(res => {
+      .then(() => {
           pup_name.value = ''
           breed.value = ''
           allergies.value = ''
           hobbies.value = ''
           image_url.value = ''
+          this.props.onSubmitSuccess()
 
         })
       .catch(res => {
@@ -74,7 +68,7 @@ export default class AddPupForm extends Component {
         <button 
           type='submit' 
           className='savePupButton' 
-          onClick={this.props.history.push('/yourpups')}>Save Pup</button>
+          >Save Pup</button>
       </form>
     )
   }
