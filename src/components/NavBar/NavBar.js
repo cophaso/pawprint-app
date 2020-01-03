@@ -5,9 +5,15 @@ import Logo from '../Logo/Logo'
 
 export default function NavBar(){
     return (
-        <nav role='navigation'>
-            <Menu />
-            <Logo />
+        <nav role='navigate'>
+            <div className='navigation'>
+                <div className='menuNav'>   
+                    <Menu />
+                </div>
+                <div className='logoNav'>  
+                    <Logo />
+                </div>
+            </div>
         </nav>
     )
 }

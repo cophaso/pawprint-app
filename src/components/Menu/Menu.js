@@ -1,5 +1,5 @@
 import React from 'react'
-import './Menu.css'
+import '../NavBar/NavBar.css'
 import HamburgerMenu from '../HamburgerMenu/HamburgerMenu'
 
 export default function Menu(){

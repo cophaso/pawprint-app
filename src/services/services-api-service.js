@@ -15,7 +15,7 @@ const ServicesApiService = {
           : res.json()
       )
   },
-  postServices(pupId, services_type, note) {
+  postServices(appt_date, pup_id, services_type) {
     return fetch(`${config.API_ENDPOINT}/pup-services`, {
       method: 'POST',
       headers: {
@@ -23,9 +23,9 @@ const ServicesApiService = {
         'authorization': `bearer ${TokenService.getAuthToken()}`
       },
       body: JSON.stringify({
-        pup_id: pupId, 
-        services_type, 
-        note
+        pup_id, 
+        services_type,
+        appt_date
       }),
     })
       .then(res => res.json())

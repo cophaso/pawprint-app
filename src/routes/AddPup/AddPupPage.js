@@ -4,6 +4,19 @@ import NavBar from '../../components/NavBar/NavBar';
 import './AddPupPage.css';
 
 export default class AddPupPage extends Component {
+  static defaultProps = {
+    location: {},
+    history: {
+      push: () => {},
+    },
+  }
+
+  handleSubmitSuccess = () => {
+    const { location, history } = this.props
+    const destination = (location.state || {}).from || '/yourpups'
+    history.push(destination)
+  }
+
   render() {
     return (
       <>
@@ -11,7 +24,8 @@ export default class AddPupPage extends Component {
         <div className='AddPupPage--container'>
           <div className='AddPupPage'>
             <h2>Add Your Pup</h2>
-            <AddPupForm />
+            <AddPupForm 
+              onSubmitSuccess={this.handleSubmitSuccess}/>
           </div>
         </div>
       </>
