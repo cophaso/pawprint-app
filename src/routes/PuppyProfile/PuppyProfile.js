@@ -35,7 +35,7 @@ class PuppyProfile extends React.Component {
         const {pup, services} = this.state
 
         return (
-        <div>
+        <div className="pupProContainer">
             <NavBar />
             
         <section className="hero">
@@ -47,6 +47,7 @@ class PuppyProfile extends React.Component {
             </div>
         </section>
 
+        <div className="pupProDetailsContainer">
         <section className="about">
             <h3 className='sectionTitle'>About:</h3>
                 <ul className='aboutPup'>
@@ -71,6 +72,7 @@ class PuppyProfile extends React.Component {
                 <PupServices services={services} />
         </section>
       
+      </div>
         </div>
       );
     }

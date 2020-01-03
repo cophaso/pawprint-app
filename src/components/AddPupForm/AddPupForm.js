@@ -62,7 +62,7 @@ export default class AddPupForm extends Component {
           <input type='text' name='hobbies' />
         </section>
         <section className='image_url'>
-          <label>Add an Image URL of Your Pup</label>
+          <label>Pup image URL (jpg or png)</label>
           <input type="text" name='image_url' />
         </section>
         <button 
