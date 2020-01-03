@@ -91,7 +91,7 @@ class PupservationPage extends React.Component {
               </select>
 
               <section className='note'>
-                <label>Note</label>
+                <label>Notes</label>
                 <input type='text' name='note' />
               </section>
               

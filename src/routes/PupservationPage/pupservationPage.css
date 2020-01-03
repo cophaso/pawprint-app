@@ -28,21 +28,24 @@ input, select {
     font-size: 20px;
 }
 
-.pupservation-header {
+.pupservation-header, .note {
     color: white;
     text-shadow: gainsboro;
     font-size: 20px;
     padding-top: 10px;
-
 }
 
-.savePupServiceButton {
+.note {
+    padding: 20px 0;
+}
+
+.pupservationConfirm-container {
     font-size: 16px;
     border-radius: 4px;
     padding: 5px 10px;
     background: #E6E6EB;
     color: #214A77;
-    margin: 10px 20px 0 0;
+    margin: 20px 20px 0 0;
   }
 }
 
@@ -73,13 +76,21 @@ input, select {
         font-size: 30px;
     }
     
-    .pupservation-header {
+    .pupservation-header, .note {
         color: white;
         text-shadow: gainsboro;
         font-size: 26px;
         padding-top: 10px;
-    
     }
+
+    .pupservationConfirm-container {
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 5px 10px;
+        background: #E6E6EB;
+        color: #214A77;
+        margin: 20px 20px 0 0;
+      }
 }
   @media only screen and (min-width: 1000px) {
       /* tablets and desktop */
@@ -108,7 +119,7 @@ input, select {
         font-size: 30px;
     }
     
-    .pupservation-header {
+    .pupservation-header, .note {
         color: white;
         text-shadow: gainsboro;
         font-size: 26px;
@@ -116,14 +127,12 @@ input, select {
     
     }
 
-    .savePupServiceButton {
-        display: block;
-        font-size: 16px;
+    .pupservationConfirm-container {
+        font-size: 26px;
         border-radius: 4px;
         padding: 5px 10px;
         background: #E6E6EB;
         color: #214A77;
-        margin: 10px 20px 0 0;
-        text-align: center;
+        margin: 20px 20px 0 0;
       }
   }

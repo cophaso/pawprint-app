@@ -10,7 +10,9 @@ export default function LandingPage(){
     return (
         <div className='landingPage-container'>
             <NavBar />
-            <LandingCarousel />
+            <div className='carouselContainer'>
+                <LandingCarousel />
+            </div>
             <main role="main">
                 <section className='landingpage'>
                     <section className='landingPage-section1'>
