@@ -3,11 +3,9 @@ import './pupservationPage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import Dropdown from 'react-dropdown';
 import 'react-dropdown/style.css';
 import PupservationConfirm from '../../components/PupservationConfirm/PupservationConfirm';
-import config from '../../config';
-import { render } from 'react-dom';
+import ServicesApiService from '../../services/services-api-service';
 import PupsApiService from '../../services/pups-api-service';
 
     /* a;skdfj;alksjdf;kaj;dfj;aksjdflkja; */
@@ -30,38 +28,27 @@ class PupservationPage extends React.Component {
       });
     };
 
-    // NEED TO MAKE SEPARATE PUPS-SERVICES-API-SERVICE......
-    // handleSubmit = ev =>{
-    //   ev.preventDefault()
+    handleSubmit = ev =>{
+      ev.preventDefault()
   
-    //   this.setState({error: null})
+      this.setState({error: null})
   
-    //   const {dateList, pupList, serviceList} = ev.target
+      const {dateList, pupList, serviceList} = ev.target
   
-    //   PupsApiService.postLogin({
-    //     appt_date: email.value,
-    //     password: password.value,
-    //   })
-    //   .then(res => {
-    //     if(typeof res.authToken !== 'undefined') {
-    //       localStorage.setItem('user_id', res.id)
-    //       email.value = ''
-    //       password.value = ''
-    //       TokenService.saveAuthToken(res.authToken)
-    //       this.props.onLoginSuccess()
-    //     }
-    //     else {
-    //       this.setState({error: res.error})
-    //     }
-    //   })
-    //   .catch(res => {
-    //     throw new Error(res.error);
-    //   })
-    // }
+
+      /// FIX THIS SHIT HERE........
+      ServicesApiService.postServices({
+        appt_date: dateList.value,
+        pup_id: pupList.value,
+        service_type: serviceList.value
+      })
+      .catch(res => {
+        throw new Error(res.error);
+      })
+    }
 
 
   componentDidMount() {
-    
     PupsApiService.getPups()
       .then( puppers => this.setState({pups: puppers}) )
   }

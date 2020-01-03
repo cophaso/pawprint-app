@@ -47,7 +47,6 @@ class PuppyProfile extends React.Component {
                     <li>Breed: {pup.breed}</li>
                     <li>Allergies: {pup.allergies}</li>
                     <li>Hobbies: {pup.hobbies}</li>
-                    <PupParent parent={pup.parent} />
                 </ul>
         </section>
 

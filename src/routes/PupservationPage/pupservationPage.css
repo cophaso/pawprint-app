@@ -11,7 +11,7 @@
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 25px;
+    padding: 55px;
 }
 
 .pupservation-heading {
@@ -21,24 +21,11 @@
 
 }
 
-.Dropdown-control, .dateDropdown, select {
+input, select {
     width: 90%;
     margin: 0 auto;
     background-color: white;
-
-}
-.dropdown {
-    display: inline-block;
-
-}
-
-.dropdown__content {
-    display: none;
-    position: absolute;
-}
-
-.dropdown--active .dropdown__content {
-    display: block;
+    font-size: 20px;
 }
 
 .pupservation-header {
@@ -54,13 +41,13 @@
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
     .pupservationContainer {
-        margin: 30px;
+        margin: 40px;
         background-color: #214A77;  
         color: white;
-        width: 90%;
+        width: 80%;
         margin-left: auto;
         margin-right: auto;
-        padding: 25px;
+        padding: 55px;
     }
     
     .pupservation-heading {
@@ -70,23 +57,11 @@
     
     }
     
-    .Dropdown-control, .dateDropdown {
+    input, select {
         width: 90%;
         margin: 0 auto;
-    
-    }
-    .dropdown {
-        display: inline-block;
-    
-    }
-    
-    .dropdown__content {
-        display: none;
-        position: absolute;
-    }
-    
-    .dropdown--active .dropdown__content {
-        display: block;
+        background-color: white;
+        font-size: 30px;
     }
     
     .pupservation-header {
@@ -100,13 +75,13 @@
   @media only screen and (min-width: 1000px) {
       /* tablets and desktop */
       .pupservationContainer {
-        margin: 30px;
+        margin: 50px;
         background-color: #214A77;  
         color: white;
-        width: 90%;
+        width: 70%;
         margin-left: auto;
         margin-right: auto;
-        padding: 25px;
+        padding: 55px;
     }
     
     .pupservation-heading {
@@ -116,23 +91,11 @@
     
     }
     
-    .Dropdown-control, .dateDropdown {
+    input, select {
         width: 90%;
         margin: 0 auto;
-    
-    }
-    .dropdown {
-        display: inline-block;
-    
-    }
-    
-    .dropdown__content {
-        display: none;
-        position: absolute;
-    }
-    
-    .dropdown--active .dropdown__content {
-        display: block;
+        background-color: white;
+        font-size: 30px;
     }
     
     .pupservation-header {
@@ -142,4 +105,6 @@
         padding-top: 10px;
     
     }
+
+ 
   }
