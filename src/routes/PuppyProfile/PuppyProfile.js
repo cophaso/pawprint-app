@@ -78,7 +78,7 @@ class PuppyProfile extends React.Component {
   
 function PupParent({parent = []}){
     return(
-    <li key={parent.id}>Parent: {parent.user_name}</li>
+    <li key={parent.id}>Parent: {parent.name}</li>
     )
 }
 
@@ -86,7 +86,7 @@ function PupServices({services = []}){
     return(
         <ul className='aboutPup'>
             {services.map(service =>
-                <li key={service.id}>{format(new Date(service.date), 'iii, MMM dd')}: {service.service_type}</li>
+                <li key={service.id}>{format(new Date(service.appt_date), 'iii, MMM dd')}: {service.service_type}</li>
             )}
         </ul>
     )
