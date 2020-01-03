@@ -35,6 +35,15 @@ input, select {
     padding-top: 10px;
 
 }
+
+.savePupServiceButton {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin: 10px 20px 0 0;
+  }
 }
 
 
@@ -82,6 +91,7 @@ input, select {
         margin-left: auto;
         margin-right: auto;
         padding: 55px;
+        text-align: center;
     }
     
     .pupservation-heading {
@@ -106,5 +116,14 @@ input, select {
     
     }
 
- 
+    .savePupServiceButton {
+        display: block;
+        font-size: 16px;
+        border-radius: 4px;
+        padding: 5px 10px;
+        background: #E6E6EB;
+        color: #214A77;
+        margin: 10px 20px 0 0;
+        text-align: center;
+      }
   }
