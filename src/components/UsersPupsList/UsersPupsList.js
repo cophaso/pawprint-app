@@ -7,7 +7,12 @@ export default class UsersPupsList extends React.Component {
     return (
       <>
         <ul>
-          {this.props.pups.map((pup, i) => <UsersPup {...pup} key={i} />)}
+          {this.props.pups.map((pup, i) => { 
+            if (pup.parent_id == localStorage.getItem('user_id')){
+              return <UsersPup {...pup} key={i} />
+            }
+          })
+          }
         </ul>
       </>
     )
