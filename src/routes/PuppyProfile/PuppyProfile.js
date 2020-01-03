@@ -1,4 +1,5 @@
 import React from 'react';
+import {format} from 'date-fns';
 import './PuppyProfile.css';
 import NavBar from '../../components/NavBar/NavBar';
 import PupsApiService from '../../services/pups-api-service';
@@ -13,6 +14,7 @@ class PuppyProfile extends React.Component {
         super(props);
         this.state = {
           pup: [],
+          services: []
         };
       }
 
@@ -23,10 +25,14 @@ class PuppyProfile extends React.Component {
             .then(pup =>{
                 this.setState({pup: pup})
             })
+        PupsApiService.getPupServices(pupId)
+            .then(services =>{
+                this.setState({services: services})
+            })
     }
 
     render() {
-        const {pup} = this.state
+        const {pup, services} = this.state
 
         return (
         <div>
@@ -47,6 +53,7 @@ class PuppyProfile extends React.Component {
                     <li>Breed: {pup.breed}</li>
                     <li>Allergies: {pup.allergies}</li>
                     <li>Hobbies: {pup.hobbies}</li>
+                    <PupParent parent={pup.parent} />
                 </ul>
         </section>
 
@@ -55,15 +62,13 @@ class PuppyProfile extends React.Component {
                 <ul className='aboutPup'>
                     <li>Tues, Dec. 23rd</li>
                     <li>Wed, Dec. 24th</li>
-                    <li>Fri, Dec 28th:</li>
+                    <li>Fri, Dec 28th</li>
                 </ul>
         </section>
 
         <section className="services">
             <h3 className='sectionTitle'>Services:</h3>
-                <ul className='aboutPup'>
-                    <li>Grooming: Dec. 23rd</li>
-                </ul>
+                <PupServices services={services} />
         </section>
       
         </div>
@@ -73,9 +78,18 @@ class PuppyProfile extends React.Component {
   
 function PupParent({parent = []}){
     return(
-    <li key={parent.id}>Parent: {parent.user_name}</li>
+    <li key={parent.id}>Parent: {parent.name}</li>
     )
 }
-  
+
+function PupServices({services = []}){
+    return(
+        <ul className='aboutPup'>
+            {services.map(service =>
+                <li key={service.id}>{format(new Date(service.appt_date), 'iii, MMM dd')}: {service.service_type}</li>
+            )}
+        </ul>
+    )
+}
   
 export default PuppyProfile;
