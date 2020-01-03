@@ -1,4 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Pawprint App
+
+PawPrint is a great way for your company to keep up with the office pups! The app solves the issue of managing dogs in an office. You can schedule when your dog will be in the office and schedule any services (vet, grooming) to make sure the on-call third parties are scheduled for those days.
+
+Live: 
+client: https://pawprint-app.now.sh/
+server: https://guarded-peak-83816.herokuapp.com/ 
+
+Server Repo: https://github.com/cophaso/pawprint-server
+
+Team: Kayla Graham, Crystal Ophaso, Amber Meritt
 
 ## Available Scripts
 
