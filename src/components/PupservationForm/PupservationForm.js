@@ -1,6 +1,5 @@
 import React from 'react';
 import './pupservationPage.css';
-import NavBar from '../../components/NavBar/NavBar';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-dropdown/style.css';
@@ -8,14 +7,18 @@ import PupsApiService from '../../services/pups-api-service';
 import PupServicesApiService from '../../services/pup-services-api-service';
 
 
-class PupservationPage extends React.Component {
+class PupservationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
     startDate: new Date(),
     pups: [], 
     services: [],
-    error: null
+    current_pup: '',
+    error: null,
+    history: {
+      push: () => {},
+    },
     };
   }
 
@@ -38,6 +41,8 @@ class PupservationPage extends React.Component {
       this.setState({error: null})
   
       const {dateList, pupList, serviceList, note} = ev.target
+
+      this.setState({current_pup: pupList.value.toString()})
   
       PupServicesApiService.postPupService({
         appt_date: dateList.value,
@@ -47,7 +52,6 @@ class PupservationPage extends React.Component {
       })
       .then(res => {
           note.value = ''
-          window.location.assign(`/profile/${pupList.value}`)
       })
       .catch(res => {
         throw new Error(res.error);
@@ -55,6 +59,7 @@ class PupservationPage extends React.Component {
     }
    
     render() {
+      console.log(this.state.history)
         const dropPups = this.state.pups.map((pup, i) => {
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>
@@ -63,10 +68,6 @@ class PupservationPage extends React.Component {
 
       return (
           
-        <div>
-        <NavBar />
-        <div className="pupservationContainer">
-        <h2 className='pupservation-heading'>Make a Pupservation</h2>
           <form 
             className='pupservationForm'
             onSubmit={e => this.handleSubmit(e)}>
@@ -101,10 +102,8 @@ class PupservationPage extends React.Component {
                 className='pupservationConfirm-container' 
                 >Submit</button>
           </form>
-        </div>
-        </div>
       );
     }
   }
 
-export default PupservationPage;
+export default PupservationForm;
