@@ -15,7 +15,32 @@ Team: Kayla Graham, Crystal Ophaso, Amber Meritt
 HTML/CSS/JavaScript/React/JSX/Git/NPM
 
 ## App Screenshots
-![Full Screen Homepage](readme-img/fullscreen-homepage.png)
+### Fullscreen
+Homepage:
+<img src="./readme-img/fullscreen-homepage.png"
+    alt="Fullscreen Homepage"
+    style="float: left; margin-right: 10px;" />
+
+### Mobile
+Homepage:
+<img src="./readme-img/mobile-homepage.png"
+    alt="Mobile Homepage"
+    style="float: left; margin-right: 10px;" />
+
+Your Pups page:
+<img src="./readme-img/mobile-yourPups.png"
+    alt="Your Pups page"
+    style="float: left; margin-right: 10px;" />
+
+Add Pup page:
+<img src="./readme-img/mobile-addPup.png"
+    alt="Add Pup page"
+    style="float: left; margin-right: 10px;" />
+
+Add Pupservation page:
+<img src="./readme-img/mobile-addPupservation.png"
+    alt="Add Pupservation page"
+    style="float: left; margin-right: 10px;" />
 
 ## Available Scripts
 
