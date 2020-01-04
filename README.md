@@ -15,7 +15,7 @@ Team: Kayla Graham, Crystal Ophaso, Amber Meritt
 HTML/CSS/JavaScript/React/JSX/Git/NPM
 
 ## App Screenshots
-<img src='./README-img/fullscreen-homepage.png'>
+![Full Screen Homepage](fullscreen-homepage.png)
 
 ## Available Scripts
 
