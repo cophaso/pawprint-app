@@ -26,7 +26,7 @@ class HomePage extends React.Component {
             <div className = "dogCalendar">
                 <span className="title">Today's Guests</span>
                 <span role='img' aria-label='icon' className="dogIcon">🐶</span>
-                <span className="counter">#</span>
+                <span className="counter">Count: 12</span>
             </div>
         </section>
 
