@@ -18,13 +18,13 @@ HTML/CSS/JavaScript/React/JSX/Git/NPM
 ### Fullscreen
 Homepage:
 
-![alt text](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-homepage.png)
+![Fullscreen Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-homepage.png)
 
 
 ### Mobile
 Homepage:
 
-![Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-hompage.png)
+![Mobile Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-homepage.png)
 
 Your Pups page:</br>
 <img src="./readme-img/mobile-yourPups.png"
