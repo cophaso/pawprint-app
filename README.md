@@ -26,20 +26,19 @@ Homepage:
 
 ![Mobile Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-homepage.png)
 
-Your Pups page:</br>
-<img src="./readme-img/mobile-yourPups.png"
-    alt="Your Pups page"
-    style="float: left; margin-right: 10px;" />
+Your Pups page:
 
-Add Pup page:</br>
-<img src="./readme-img/mobile-addPup.png"
-    alt="Add Pup page"
-    style="float: left; margin-right: 10px;" />
+![You Pups page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-yourPups.png)
 
-Add Pupservation page:</br>
-<img src="./readme-img/mobile-addPupservation.png"
-    alt="Add Pupservation page"
-    style="float: left; margin-right: 10px;" />
+
+Add Pup page:
+
+![Add Pups page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-addPup.png)
+
+
+Add Pupservation page:
+
+![Pupservation Page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-addPupservation.png)
 
 ## Available Scripts
 
