@@ -16,28 +16,28 @@ HTML/CSS/JavaScript/React/JSX/Git/NPM
 
 ## App Screenshots
 ### Fullscreen
-Homepage:
-<img src="./readme-img/fullscreen-homepage.png"
+Homepage:</br>
+<img src="./readme-img/fullscreen-homepage.PNG"
     alt="Fullscreen Homepage"
     style="float: left; margin-right: 10px;" />
 
 ### Mobile
-Homepage:
+Homepage:</br>
 <img src="./readme-img/mobile-homepage.png"
     alt="Mobile Homepage"
     style="float: left; margin-right: 10px;" />
 
-Your Pups page:
+Your Pups page:</br>
 <img src="./readme-img/mobile-yourPups.png"
     alt="Your Pups page"
     style="float: left; margin-right: 10px;" />
 
-Add Pup page:
+Add Pup page:</br>
 <img src="./readme-img/mobile-addPup.png"
     alt="Add Pup page"
     style="float: left; margin-right: 10px;" />
 
-Add Pupservation page:
+Add Pupservation page:</br>
 <img src="./readme-img/mobile-addPupservation.png"
     alt="Add Pupservation page"
     style="float: left; margin-right: 10px;" />
