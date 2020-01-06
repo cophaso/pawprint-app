@@ -17,27 +17,26 @@ export default function LandingPage(){
                 <section className='landingpage'>
                     <section className='landingPage-section1'>
                         <header>
-                            <h3>Find your new office bestie</h3>
+                            <h3>Dog-friendly office?</h3>
                         </header>
                         <div className='landingPage-img'>
                             <img src={grump} alt='placeholder pup' />
                         </div>
-                        <h4>PawPrint is a great way to keep up with the office pups</h4>
+                        <h4>PawPrint helps employees manage pup office visits and appointments</h4>
                     </section>
 
                     <section className='landingPage-section2'>
-                        <h4>Find out who's visiting the office and help your team know you're bringing your furbaby to work.
-                        </h4>
+                        <h4>Individuals can add a pup to their profile to make scheduling easy</h4>
                     </section>
 
                     <section className='landingPage-section3'>
                         <header>
-                            <h3>Make Appointments</h3>
+                            <h3>Have a meeting?</h3>
                         </header>
                         <div className='landingPage-img'>
                             <img src={eyes} alt='placeholder pup' />
                         </div>
-                        <h4>Schedule a play date or a grooming appointment easily</h4>
+                        <h4>Schedule a grooming, vet care, or day care appointment</h4>
                     </section>
 
                 </section>
