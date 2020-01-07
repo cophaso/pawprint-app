@@ -1,10 +1,11 @@
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 325px) {
     /* phones */
 
 .carouselContainer {
     background-color:  #E6E6EB;
+    padding-top: 50px;
 }
 
 .landingPage-container img{

@@ -5,13 +5,12 @@
 @media only screen and (max-width: 768px) {
     /* phones */
 .pupservationContainer {
-    margin: 30px;
     background-color: #214A77;  
     color: white;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    padding: 55px;
+    padding: 100px 50px 50px 50px;
 }
 
 .pupservation-heading {
@@ -53,13 +52,13 @@ input, select {
 @media only screen and (min-width: 768px) {
     /* tablets and desktop */
     .pupservationContainer {
-        margin: 40px;
         background-color: #214A77;  
         color: white;
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        padding: 55px;
+        padding: 100px 50px 50px 50px;
+
     }
     
     .pupservation-heading {
@@ -95,13 +94,12 @@ input, select {
   @media only screen and (min-width: 1000px) {
       /* tablets and desktop */
       .pupservationContainer {
-        margin: 50px;
         background-color: #214A77;  
         color: white;
         width: 70%;
         margin-left: auto;
         margin-right: auto;
-        padding: 55px;
+        padding: 100px 50px 50px 50px;
         text-align: center;
     }
     

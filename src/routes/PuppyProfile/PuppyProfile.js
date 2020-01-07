@@ -36,15 +36,14 @@ class PuppyProfile extends React.Component {
         return (
         <div className="pupProContainer">
             <NavBar />
-            
-        <section className="hero">
-            <div className="centered">
+
+             <div className="centered">
                 <div className="dogImage">
                     <img src={pup.image_url} className="profilePic" alt ='' />
                     <div className="dogName">{pup.pup_name}</div>
                 </div>
             </div>
-        </section>
+        
 
         <div className="pupProDetailsContainer">
         <section className="about">

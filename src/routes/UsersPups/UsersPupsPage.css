@@ -6,8 +6,7 @@
   /* phones */
   .usersPupsPage-container {
     text-align: center;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    padding-top: 100px;
   }
   
 .usersPupsPage-container ul{
@@ -60,8 +59,7 @@
   /* tablets and desktop */
   .usersPupsPage-container {
     text-align: center;
-    margin-top: 40px;
-
+    padding-top: 100px;
   }
   
 .usersPupsPage-container ul{
@@ -111,8 +109,7 @@
     /* tablets and desktop */
     .usersPupsPage-container {
       text-align: center;
-      margin-top: 40px;
-      margin-bottom: 40px;
+      padding-top: 100px;
     }
     
   .usersPupsPage-container ul{

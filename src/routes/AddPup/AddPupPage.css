@@ -6,8 +6,9 @@
     text-align: center;
     color: white;
     width: 90%;
-    margin: 30px auto;
+    margin: auto;
     padding: 25px;
+    padding-top: 100px
   }
 
   input {
@@ -49,8 +50,9 @@
     text-align: center;
     color: white;
     width: 70%;
-    margin: 50px auto;
+    margin: auto;
     padding: 25px;
+    padding-top: 100px
   }
 
   input {
@@ -92,8 +94,9 @@
       text-align: center;
       color: white;
       width: 60%;
-      margin: 30px auto;
+      margin: auto;
       padding: 25px;
+      padding-top: 100px
     }
   
     input {

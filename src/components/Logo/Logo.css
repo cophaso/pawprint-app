@@ -1,15 +1,17 @@
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 325px) {
   /* phones */
 
-  .logo{
+  .wholeLogo{
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   color: black;
   text-decoration: none;
   text-decoration-color: black;
   text-decoration-style: none;
 }
 
-.logo img{
+.wholeLogo img {
   width: 40px;
   height: 40px;
   margin-left: 25%;
@@ -63,34 +65,3 @@
   }
 }
 
-@media only screen and (min-width: 1000px) {
-  /* tablets and desktop */
-  .logo{
-    display: flex;
-    color: black;
-    text-decoration: none;
-    text-decoration-color: black;
-    text-decoration-style: none;
-  }
-  
-  .logo img{
-    width: 40px;
-    height: 40px;
-    margin-left: 25%;
-  }
-  
-  .logo-title {
-    width: 400px;
-  }
-  .logo-title h1{
-    margin: 0 15px 0 15px;
-    padding: 0;
-    font-size: 20px;
-  }
-  
-  .logo-title p{
-    margin: 0 15px 0 15px;
-    padding: 0;
-    font-size: 15px;
-  }
-}

@@ -11,7 +11,7 @@ class PupservationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      startDate: new Date(),
+      startDate: '',
       pups: [], 
       services: [],
       error: null,
@@ -28,11 +28,6 @@ class PupservationForm extends React.Component {
 
   }
 
-    handleChange = date => {
-      this.setState({
-        startDate: date
-      });
-    };
 
     handleSubmit = ev =>{
       ev.preventDefault()
@@ -55,9 +50,11 @@ class PupservationForm extends React.Component {
       .catch(res => {
         throw new Error(res.error);
       })
+      
     }
    
     render() {
+      
         const dropPups = this.state.pups.map((pup, i) => {
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>
@@ -76,6 +73,7 @@ class PupservationForm extends React.Component {
                       onChange={this.handleChange}
                       name='dateList'
                       />
+                      
                   </div>
               
               <h3 className='pupservation-header'>Who's coming?</h3>

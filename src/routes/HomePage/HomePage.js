@@ -15,28 +15,25 @@ class HomePage extends React.Component {
       return (
         <div>
             <NavBar />
-            
-        <section className="calendar">
-            <div className = "dogCalendar">
+      
+      <div className = "welcomeBanner">
+            <div className="dogCon">
                 <span className="title">Welcome to</span>
                 <span role='img' aria-label='icon' className="dogIcon">🐶</span>
                 <span className="counter">PawPrint</span>
-            </div>
-        </section>
+              </div>
+            <div className='introduction'>
+              <div className="gettingStarted">
+                    <h3>Getting Started</h3>
+                    <p>Add a pup through the link below to start scheduling your appointments.</p>
+                    <Link to = './addpup'>Add a Pup</Link>
+                </div>
 
-        <section className="dogAvatars">
-          <div className="dogList">
-                <div className='gettingStarted'>
-                       <h3>Getting Started</h3>
-                       <p>If this is your first time logging in, please add a pup through the link below.</p>
-                      <Link to = './addpup'>Add a Pup</Link>
-                  </div>
-
-                  <div className='makePupservation'>
-                    <p>Or make a Pupservation to reserve an appointment for vet care, grooming, daycare, or a simple office visit.</p>
-                  </div>
-          </div>          
-        </section>
+                <div className='makePupservation'>
+                  <p>Make a Pupservation to reserve a slot for your dog's vet care, grooming, daycare, or office visit.</p>
+                </div>  
+          </div>  
+       </div>    
 
         <section>
           <PupservationBar />
