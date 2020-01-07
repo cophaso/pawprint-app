@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginBar component renders LoginBar by default 1`] = `
+<div
+  className="loginBar-container"
+>
+  <Link
+    className="loginBar-link"
+    to="/login"
+  >
+    Login
+  </Link>
+</div>
+`;
+
+exports[`LoginBar component renders the LoginBar given props 1`] = `
+<div
+  className="loginBar-container"
+>
+  <Link
+    className="loginBar-link"
+    to="/login"
+  >
+    Login
+  </Link>
+</div>
+`;

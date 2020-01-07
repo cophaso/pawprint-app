@@ -88,6 +88,7 @@ class PupservationPage extends React.Component {
                 <option value='Grooming'>Grooming</option>
                 <option value='Vet'>Vet</option>
                 <option value='Daycare'>Daycare</option>
+                <option value='Visiting'>Office Visit</option>
               </select>
 
               <section className='note'>

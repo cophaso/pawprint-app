@@ -10,30 +10,29 @@ class PupservationForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-    startDate: new Date(),
-    pups: [], 
-    services: [],
-    current_pup: '',
-    error: null,
-    history: {
-      push: () => {},
+      startDate: new Date(),
+      pups: [], 
+      services: [],
+      error: null,
+      history: {
+        push: () => {},
     },
     };
+
   }
 
   componentDidMount() {
-    PupsApiService.getPups()
+    PupsApiService.getPup(pupId)
       .then( puppers => this.setState({pups: puppers}) )
+
   }
 
-    // sets the date for the date picker
     handleChange = date => {
       this.setState({
         startDate: date
       });
     };
 
-    // NEED TO MAKE SEPARATE PUPS-SERVICES-API-SERVICE......
     handleSubmit = ev =>{
       ev.preventDefault()
   
@@ -58,7 +57,6 @@ class PupservationForm extends React.Component {
     }
    
     render() {
-      
         const dropPups = this.state.pups.map((pup, i) => {
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>
@@ -89,11 +87,12 @@ class PupservationForm extends React.Component {
                 <option value='Grooming'>Grooming</option>
                 <option value='Vet'>Vet</option>
                 <option value='Daycare'>Daycare</option>
+                <option value='Visiting'>Office Visit</option>
               </select>
 
               <section className='note'>
                 <label>Note</label>
-                <input type='text' name='note' />
+                <textarea type='text' name='note' />
               </section>
               
               <button 

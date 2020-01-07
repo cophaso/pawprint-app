@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar component renders NavBar by default 1`] = `
+<nav
+  role="navigate"
+>
+  <div
+    className="navigation"
+  >
+    <div
+      className="menuNav"
+    >
+      <Menu />
+    </div>
+    <div
+      className="logoNav"
+    >
+      <Logo />
+    </div>
+  </div>
+</nav>
+`;
+
+exports[`NavBar component renders the NavBar given props 1`] = `
+<nav
+  role="navigate"
+>
+  <div
+    className="navigation"
+  >
+    <div
+      className="menuNav"
+    >
+      <Menu />
+    </div>
+    <div
+      className="logoNav"
+    >
+      <Logo />
+    </div>
+  </div>
+</nav>
+`;

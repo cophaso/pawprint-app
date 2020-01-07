@@ -6,9 +6,39 @@ Live:
 client: https://pawprint-app.now.sh/
 server: https://guarded-peak-83816.herokuapp.com/ 
 
-Server Repo: https://github.com/cophaso/pawprint-server
+App Repo: https://github.com/cophaso/pawprint-app
 
 Team: Kayla Graham, Crystal Ophaso, Amber Meritt
+
+## Technologies Used
+
+HTML/CSS/JavaScript/React/JSX/Git/NPM
+
+## App Screenshots
+### Fullscreen
+Homepage:
+
+![Fullscreen Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/fullscreen-homepage.png)
+
+
+### Mobile
+Homepage:
+
+![Mobile Homepage](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-homepage.png)
+
+Your Pups page:
+
+![You Pups page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-yourPups.png)
+
+
+Add Pup page:
+
+![Add Pups page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-addPup.png)
+
+
+Add Pupservation page:
+
+![Pupservation Page](https://github.com/cophaso/pawprint-app/blob/master/README-img/mobile-addPupservation.png)
 
 ## Available Scripts
 

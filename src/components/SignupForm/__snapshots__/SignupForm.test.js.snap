@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignupForm component renders SignupForm by default 1`] = `
+<form
+  className="SignupForm"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="name"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      id="name"
+      name="name"
+      type="text"
+    />
+  </div>
+  <div
+    className="email"
+  >
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="text"
+    />
+  </div>
+  <div
+    className="password"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      type="password"
+    />
+  </div>
+  <NavLink
+    to="/login"
+  >
+    <button
+      className="loginbuttons"
+      type="button"
+    >
+      Login?
+    </button>
+  </NavLink>
+  <button
+    className="signUpButtons"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`SignupForm component renders the SignupForm given props 1`] = `
+<form
+  className="SignupForm"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="name"
+  >
+    <label
+      htmlFor="name"
+    >
+      Name
+    </label>
+    <input
+      id="name"
+      name="name"
+      type="text"
+    />
+  </div>
+  <div
+    className="email"
+  >
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="text"
+    />
+  </div>
+  <div
+    className="password"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      type="password"
+    />
+  </div>
+  <NavLink
+    to="/login"
+  >
+    <button
+      className="loginbuttons"
+      type="button"
+    >
+      Login?
+    </button>
+  </NavLink>
+  <button
+    className="signUpButtons"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

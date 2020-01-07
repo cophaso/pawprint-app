@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo'
 
 export default function NavBar(){
     return (
-        <nav role='navigate'>
+        <nav role='navigation'>
             <div className='navigation'>
                 <div className='menuNav'>   
                     <Menu />

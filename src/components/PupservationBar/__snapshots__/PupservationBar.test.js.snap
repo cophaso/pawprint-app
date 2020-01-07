@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PupservationBar component renders PupservationBar by default 1`] = `
+<div
+  className="pupservationBar-container"
+>
+  <Link
+    className="pupservationBar-link"
+    to="/pupservations"
+  >
+    Make a Pupservation
+  </Link>
+</div>
+`;
+
+exports[`PupservationBar component renders the PupservationBar given props 1`] = `
+<div
+  className="pupservationBar-container"
+>
+  <Link
+    className="pupservationBar-link"
+    to="/pupservations"
+  >
+    Make a Pupservation
+  </Link>
+</div>
+`;

@@ -1,0 +1,155 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LandingCarousel component renders a form.LandingCarousel by default 1`] = `
+<div
+  className="carousel"
+>
+  <Carousel
+    autoPlay={true}
+    axis="horizontal"
+    centerMode={false}
+    centerSlidePercentage={80}
+    dynamicHeight={false}
+    emulateTouch={false}
+    infiniteLoop={false}
+    interval={3000}
+    labels={
+      Object {
+        "item": "slide item",
+        "leftArrow": "previous slide / item",
+        "rightArrow": "next slide / item",
+      }
+    }
+    onChange={[Function]}
+    onClickItem={[Function]}
+    onClickThumb={[Function]}
+    onSwipeEnd={[Function]}
+    onSwipeMove={[Function]}
+    onSwipeStart={[Function]}
+    selectedItem={0}
+    showArrows={true}
+    showIndicators={true}
+    showStatus={true}
+    showThumbs={true}
+    statusFormatter={[Function]}
+    stopOnHover={true}
+    swipeScrollTolerance={5}
+    swipeable={true}
+    transitionTime={350}
+    useKeyboardArrows={false}
+    verticalSwipe="standard"
+    width="100%"
+  >
+    <div>
+      <img
+        alt=""
+        src="derp.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Snickers
+      </p>
+    </div>
+    <div>
+      <img
+        alt=""
+        src="smartpup.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Janet
+      </p>
+    </div>
+    <div>
+      <img
+        alt=""
+        src="puggy.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Elvis
+      </p>
+    </div>
+  </Carousel>
+</div>
+`;
+
+exports[`LandingCarousel component renders the LandingCarousel given props 1`] = `
+<div
+  className="carousel"
+>
+  <Carousel
+    autoPlay={true}
+    axis="horizontal"
+    centerMode={false}
+    centerSlidePercentage={80}
+    dynamicHeight={false}
+    emulateTouch={false}
+    infiniteLoop={false}
+    interval={3000}
+    labels={
+      Object {
+        "item": "slide item",
+        "leftArrow": "previous slide / item",
+        "rightArrow": "next slide / item",
+      }
+    }
+    onChange={[Function]}
+    onClickItem={[Function]}
+    onClickThumb={[Function]}
+    onSwipeEnd={[Function]}
+    onSwipeMove={[Function]}
+    onSwipeStart={[Function]}
+    selectedItem={0}
+    showArrows={true}
+    showIndicators={true}
+    showStatus={true}
+    showThumbs={true}
+    statusFormatter={[Function]}
+    stopOnHover={true}
+    swipeScrollTolerance={5}
+    swipeable={true}
+    transitionTime={350}
+    useKeyboardArrows={false}
+    verticalSwipe="standard"
+    width="100%"
+  >
+    <div>
+      <img
+        alt=""
+        src="derp.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Snickers
+      </p>
+    </div>
+    <div>
+      <img
+        alt=""
+        src="smartpup.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Janet
+      </p>
+    </div>
+    <div>
+      <img
+        alt=""
+        src="puggy.jpg"
+      />
+      <p
+        className="legend"
+      >
+        Elvis
+      </p>
+    </div>
+  </Carousel>
+</div>
+`;
