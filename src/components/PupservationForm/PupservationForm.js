@@ -1,5 +1,4 @@
 import React from 'react';
-import './pupservationPage.css';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import 'react-dropdown/style.css';
@@ -59,7 +58,7 @@ class PupservationForm extends React.Component {
     }
    
     render() {
-      console.log(this.state.history)
+      
         const dropPups = this.state.pups.map((pup, i) => {
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>

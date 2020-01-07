@@ -84,4 +84,9 @@ body {
   height: 150px;
 }
 
+.UserAvatar--img {
+  height: 150px;
+  width: 150px;
+}
+
 
