@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PupservationConfirm component renders PupservationConfirm by default 1`] = `
+<div
+  className="pupservationConfirm-container"
+>
+  <Link
+    className="pupservationConfirm-link"
+    to="/profile/1"
+  >
+    Submit
+  </Link>
+</div>
+`;
+
+exports[`PupservationConfirm component renders the PupservationConfirm given props 1`] = `
+<div
+  className="pupservationConfirm-container"
+>
+  <Link
+    className="pupservationConfirm-link"
+    to="/profile/1"
+  >
+    Submit
+  </Link>
+</div>
+`;

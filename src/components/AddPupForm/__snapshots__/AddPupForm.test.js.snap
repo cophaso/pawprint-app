@@ -1,0 +1,139 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddPupForm component renders a form.AddPupForm by default 1`] = `
+<form
+  className="AddPupForm"
+  onSubmit={[Function]}
+>
+  <section
+    className="pup-name"
+  >
+    <label>
+      Pup's Name
+    </label>
+    <input
+      name="pup_name"
+      type="text"
+    />
+  </section>
+  <section
+    className="breed"
+  >
+    <label>
+      Breed
+    </label>
+    <input
+      name="breed"
+      type="text"
+    />
+  </section>
+  <section
+    className="allergies"
+  >
+    <label>
+      Allergies
+    </label>
+    <input
+      name="allergies"
+      type="text"
+    />
+  </section>
+  <section
+    className="hobbies"
+  >
+    <label>
+      Hobbies
+    </label>
+    <input
+      name="hobbies"
+      type="text"
+    />
+  </section>
+  <section
+    className="image_url"
+  >
+    <label>
+      Pup image URL (jpg or png)
+    </label>
+    <input
+      name="image_url"
+      type="text"
+    />
+  </section>
+  <button
+    className="savePupButton"
+    type="submit"
+  >
+    Save Pup
+  </button>
+</form>
+`;
+
+exports[`AddPupForm component renders the AddPupForm given props 1`] = `
+<form
+  className="AddPupForm"
+  onSubmit={[Function]}
+>
+  <section
+    className="pup-name"
+  >
+    <label>
+      Pup's Name
+    </label>
+    <input
+      name="pup_name"
+      type="text"
+    />
+  </section>
+  <section
+    className="breed"
+  >
+    <label>
+      Breed
+    </label>
+    <input
+      name="breed"
+      type="text"
+    />
+  </section>
+  <section
+    className="allergies"
+  >
+    <label>
+      Allergies
+    </label>
+    <input
+      name="allergies"
+      type="text"
+    />
+  </section>
+  <section
+    className="hobbies"
+  >
+    <label>
+      Hobbies
+    </label>
+    <input
+      name="hobbies"
+      type="text"
+    />
+  </section>
+  <section
+    className="image_url"
+  >
+    <label>
+      Pup image URL (jpg or png)
+    </label>
+    <input
+      name="image_url"
+      type="text"
+    />
+  </section>
+  <button
+    className="savePupButton"
+    type="submit"
+  >
+    Save Pup
+  </button>
+</form>
+`;

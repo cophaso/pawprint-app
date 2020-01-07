@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu component renders Menu by default 1`] = `
+<div
+  className="hamburger-menu"
+>
+  <_default
+    outerContainerId="App"
+    pageWrapId="page-wrap"
+  />
+</div>
+`;
+
+exports[`Menu component renders the Menu given props 1`] = `
+<div
+  className="hamburger-menu"
+>
+  <_default
+    outerContainerId="App"
+    pageWrapId="page-wrap"
+  />
+</div>
+`;

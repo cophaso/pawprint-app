@@ -1,0 +1,119 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`LoginForm component renders a form.LoginForm by default 1`] = `
+<form
+  className="LoginForm"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="email"
+  >
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="text"
+    />
+  </div>
+  <div
+    className="password"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      type="password"
+    />
+  </div>
+  <div
+    className="signup-bt"
+  >
+    <NavLink
+      to="/signup"
+    >
+      <button
+        className="loginbuttons"
+        type="button"
+      >
+        Sign Up?
+      </button>
+    </NavLink>
+  </div>
+  <button
+    className="loginbuttons"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`LoginForm component renders the LoginForm given props 1`] = `
+<form
+  className="LoginForm"
+  onSubmit={[Function]}
+>
+  <div
+    role="alert"
+  />
+  <div
+    className="email"
+  >
+    <label
+      htmlFor="email"
+    >
+      Email
+    </label>
+    <input
+      id="email"
+      name="email"
+      type="text"
+    />
+  </div>
+  <div
+    className="password"
+  >
+    <label
+      htmlFor="password"
+    >
+      Password
+    </label>
+    <input
+      id="password"
+      name="password"
+      type="password"
+    />
+  </div>
+  <div
+    className="signup-bt"
+  >
+    <NavLink
+      to="/signup"
+    >
+      <button
+        className="loginbuttons"
+        type="button"
+      >
+        Sign Up?
+      </button>
+    </NavLink>
+  </div>
+  <button
+    className="loginbuttons"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;

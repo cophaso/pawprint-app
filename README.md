@@ -10,6 +10,10 @@ App Repo: https://github.com/cophaso/pawprint-app
 
 Team: Kayla Graham, Crystal Ophaso, Amber Meritt
 
+Demo User: 
+  email: user1@test.com
+  password: Password1!
+
 ## Technologies Used
 
 HTML/CSS/JavaScript/React/JSX/Git/NPM

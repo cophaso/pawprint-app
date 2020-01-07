@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersPup component renders UsersPup by default 1`] = `
+<Fragment>
+  <li
+    className="pups"
+  >
+    <Link
+      className="yourPup-link"
+      to="/profile/undefined"
+    >
+      <img
+        alt="placeholder pup"
+      />
+      <p />
+    </Link>
+  </li>
+</Fragment>
+`;
+
+exports[`UsersPup component renders the UsersPup given props 1`] = `
+<Fragment>
+  <li
+    className="pups"
+  >
+    <Link
+      className="yourPup-link"
+      to="/profile/undefined"
+    >
+      <img
+        alt="placeholder pup"
+      />
+      <p />
+    </Link>
+  </li>
+</Fragment>
+`;

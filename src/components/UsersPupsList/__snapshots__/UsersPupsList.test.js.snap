@@ -1,0 +1,13 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UsersPupsList component renders UsersPupsList by default 1`] = `
+<Fragment>
+  <ul />
+</Fragment>
+`;
+
+exports[`UsersPupsList component renders the UsersPupsList given props 1`] = `
+<Fragment>
+  <ul />
+</Fragment>
+`;
