@@ -37,28 +37,39 @@ class PupservationPage extends React.Component {
       this.setState({error: null})
   
       const {dateList, pupList, serviceList, note} = ev.target
-  
-      PupServicesApiService.postPupService({
-        appt_date: dateList.value,
-        service_type: serviceList.value,
-        note: note.value,
-        pup_id: pupList.value
-      })
-      .then(res => {
-          note.value = ''
-          window.location.assign(`/profile/${pupList.value}`)
-      })
-      .catch(res => {
-        throw new Error(res.error);
-      })
+
+      if(pupList.value === ''){
+        this.setState({error: 'Please Choose Or Add a Pup'})
+      }
+      else {
+        PupServicesApiService.postPupService({
+          appt_date: dateList.value,
+          service_type: serviceList.value,
+          note: note.value,
+          pup_id: pupList.value
+        })
+        .then(res => {
+            note.value = ''
+            window.location.assign(`/profile/${pupList.value}`)
+        })
+        .catch(res => {
+          throw new Error(res.error);
+        })
+      }
     }
    
     render() {
-        const dropPups = this.state.pups.map((pup, i) => {
+      const { error } = this.state;
+      const dropPups = this.state.pups.map((pup, i) => {
+        if (pup.parent_id.toString() === localStorage.getItem('user_id').toString()){
           return (
             <option key={i} value={pup.id}>{pup.pup_name}</option>
           )
-        });
+        }
+        else{
+          return <></>
+        }
+      });
 
       return (
           
@@ -69,6 +80,9 @@ class PupservationPage extends React.Component {
           <form 
             className='pupservationForm'
             onSubmit={e => this.handleSubmit(e)}>
+              <div role='alert'>
+                {error && <p className='red'>{error}</p>}
+              </div>
               <h3 className='pupservation-header'>Pick a date:</h3>
                   <div className='dateDropdown'>
                       <DatePicker
@@ -80,6 +94,7 @@ class PupservationPage extends React.Component {
               
               <h3 className='pupservation-header'>Who's coming?</h3>
               <select className='listOfPups' name='pupList'>
+                <option value="" selected>Select a Pup</option>
                 {dropPups}
               </select>
 
