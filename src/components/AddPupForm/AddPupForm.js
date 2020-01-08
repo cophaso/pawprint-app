@@ -16,35 +16,52 @@ export default class AddPupForm extends Component {
       this.setState({error: null})
 
       const { pup_name, breed, allergies, hobbies, image_url} = ev.target
-  
-      PupsApiService.postPups({
-        pup_name: pup_name.value,
-        breed: breed.value,
-        allergies: allergies.value,
-        hobbies: hobbies.value,
-        parent_id: localStorage.getItem('user_id'),
-        image_url: image_url.value
-      })
-      .then(() => {
-          pup_name.value = ''
-          breed.value = ''
-          allergies.value = ''
-          hobbies.value = ''
-          image_url.value = ''
-          this.props.onSubmitSuccess()
 
+      let img_url;
+
+      if (image_url.value === ''){
+        img_url = 'https://static.thenounproject.com/png/875858-200.png'
+      }
+      else{
+        img_url = image_url.value
+      }
+
+      if(pup_name.value === ''){
+        this.setState({error: 'Please add a name for the pup'})
+      }
+      else{
+        PupsApiService.postPups({
+          pup_name: pup_name.value,
+          breed: breed.value,
+          allergies: allergies.value,
+          hobbies: hobbies.value,
+          parent_id: localStorage.getItem('user_id'),
+          image_url: img_url
         })
-      .catch(res => {
-        throw new Error(res.error);
-      })
+        .then(() => {
+            pup_name.value = ''
+            breed.value = ''
+            allergies.value = ''
+            hobbies.value = ''
+            image_url.value = ''
+            this.props.onSubmitSuccess()
+
+          })
+        .catch(res => {
+          throw new Error(res.error);
+        })
+      }
     }
 
   
   render() {
-
+    const { error } = this.state;
     return (
       <form className='AddPupForm'
       onSubmit={e => this.handleSubmit(e)}>
+        <div role='alert'>
+          {error && <p className='red'>{error}</p>}
+        </div>
         <section className='pup-name'>
           <label>Pup's Name</label>
           <input type='text' name='pup_name' />

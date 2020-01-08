@@ -20,6 +20,7 @@ export default class UsersPupsPage extends React.Component {
   }
 
   render() {
+    console.log(this.state.pups)
     return (
       <div className="userspupPage">
         <NavBar />
