@@ -2,7 +2,7 @@
 
 exports[`NavBar component renders NavBar by default 1`] = `
 <nav
-  role="navigate"
+  role="navigation"
 >
   <div
     className="navigation"
@@ -15,7 +15,7 @@ exports[`NavBar component renders NavBar by default 1`] = `
     <div
       className="logoNav"
     >
-      <Logo />
+      <Header />
     </div>
   </div>
 </nav>
@@ -23,7 +23,7 @@ exports[`NavBar component renders NavBar by default 1`] = `
 
 exports[`NavBar component renders the NavBar given props 1`] = `
 <nav
-  role="navigate"
+  role="navigation"
 >
   <div
     className="navigation"
@@ -36,7 +36,7 @@ exports[`NavBar component renders the NavBar given props 1`] = `
     <div
       className="logoNav"
     >
-      <Logo />
+      <Header />
     </div>
   </div>
 </nav>

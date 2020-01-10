@@ -1,45 +1,63 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logo component renders Logo by default 1`] = `
-<NavLink
-  className="logo"
-  to="/"
->
-  <img
-    alt="logo"
-    src="pawprint-logo.png"
-  />
-  <div
-    className="logo-title"
+<Fragment>
+  <nav
+    className="navigationHeader"
   >
-    <h1>
-      PawPrint
-    </h1>
-    <p>
-      Keeping up with the office pups
-    </p>
-  </div>
-</NavLink>
+    <Link
+      to="/"
+    >
+      <div
+        className="wholeLogo"
+      >
+        <img
+          alt="logo"
+          src="pawprint-logo.png"
+        />
+        <div
+          className="logo-title"
+        >
+          <h1>
+            PawPrint
+          </h1>
+          <p>
+            Dog scheduling made easy
+          </p>
+        </div>
+      </div>
+    </Link>
+  </nav>
+</Fragment>
 `;
 
 exports[`Logo component renders the Logo given props 1`] = `
-<NavLink
-  className="logo"
-  to="/"
->
-  <img
-    alt="logo"
-    src="pawprint-logo.png"
-  />
-  <div
-    className="logo-title"
+<Fragment>
+  <nav
+    className="navigationHeader"
   >
-    <h1>
-      PawPrint
-    </h1>
-    <p>
-      Keeping up with the office pups
-    </p>
-  </div>
-</NavLink>
+    <Link
+      to="/"
+    >
+      <div
+        className="wholeLogo"
+      >
+        <img
+          alt="logo"
+          src="pawprint-logo.png"
+        />
+        <div
+          className="logo-title"
+        >
+          <h1>
+            PawPrint
+          </h1>
+          <p>
+            Dog scheduling made easy
+          </p>
+        </div>
+      </div>
+    </Link>
+  </nav>
+</Fragment>
 `;

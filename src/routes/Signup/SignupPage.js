@@ -27,9 +27,7 @@ export default class SignupPage extends Component {
             <SignupForm
               onRegistrationSuccess={this.handleRegistrationSuccess}
             />
-            <p>Demo User: <br />
-                email: user1@test.com <br />
-                password: Password1!</p>
+            
           </div>
         </div>
         </>

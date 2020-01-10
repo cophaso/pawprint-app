@@ -42,7 +42,7 @@ exports[`PupservationForm component renders PupservationForm by default 1`] = `
       previousYearButtonLabel="Previous Year"
       readOnly={false}
       renderDayContents={[Function]}
-      selected={2020-01-07T02:45:31.925Z}
+      selected=""
       shouldCloseOnSelect={true}
       showMonthYearPicker={false}
       showPopperArrow={true}
@@ -90,6 +90,11 @@ exports[`PupservationForm component renders PupservationForm by default 1`] = `
     >
       Daycare
     </option>
+    <option
+      value="Visiting"
+    >
+      Office Visit
+    </option>
   </select>
   <section
     className="note"
@@ -97,7 +102,7 @@ exports[`PupservationForm component renders PupservationForm by default 1`] = `
     <label>
       Note
     </label>
-    <input
+    <textarea
       name="note"
       type="text"
     />
@@ -153,7 +158,7 @@ exports[`PupservationForm component renders the PupservationForm given props 1`]
       previousYearButtonLabel="Previous Year"
       readOnly={false}
       renderDayContents={[Function]}
-      selected={2020-01-07T02:45:31.956Z}
+      selected=""
       shouldCloseOnSelect={true}
       showMonthYearPicker={false}
       showPopperArrow={true}
@@ -201,6 +206,11 @@ exports[`PupservationForm component renders the PupservationForm given props 1`]
     >
       Daycare
     </option>
+    <option
+      value="Visiting"
+    >
+      Office Visit
+    </option>
   </select>
   <section
     className="note"
@@ -208,7 +218,7 @@ exports[`PupservationForm component renders the PupservationForm given props 1`]
     <label>
       Note
     </label>
-    <input
+    <textarea
       name="note"
       type="text"
     />
