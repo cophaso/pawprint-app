@@ -1,0 +1,233 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`PupservationForm component renders PupservationForm by default 1`] = `
+<form
+  className="pupservationForm"
+  onSubmit={[Function]}
+>
+  <h3
+    className="pupservation-header"
+  >
+    Pick a date:
+  </h3>
+  <div
+    className="dateDropdown"
+  >
+    <t
+      allowSameDay={false}
+      dateFormat="MM/dd/yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      name="dateList"
+      nextMonthButtonLabel="Next Month"
+      nextYearButtonLabel="Next Year"
+      onBlur={[Function]}
+      onCalendarClose={[Function]}
+      onCalendarOpen={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      previousYearButtonLabel="Previous Year"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected=""
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showPopperArrow={true}
+      showPreviousMonths={false}
+      showQuarterYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      withPortal={false}
+    />
+  </div>
+  <h3
+    className="pupservation-header"
+  >
+    Who's coming?
+  </h3>
+  <select
+    className="listOfPups"
+    name="pupList"
+  />
+  <h3
+    className="pupservation-header"
+  >
+    Services:
+  </h3>
+  <select
+    className="listOfServices"
+    name="serviceList"
+  >
+    <option
+      value="Grooming"
+    >
+      Grooming
+    </option>
+    <option
+      value="Vet"
+    >
+      Vet
+    </option>
+    <option
+      value="Daycare"
+    >
+      Daycare
+    </option>
+    <option
+      value="Visiting"
+    >
+      Office Visit
+    </option>
+  </select>
+  <section
+    className="note"
+  >
+    <label>
+      Note
+    </label>
+    <textarea
+      name="note"
+      type="text"
+    />
+  </section>
+  <button
+    className="pupservationConfirm-container"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
+
+exports[`PupservationForm component renders the PupservationForm given props 1`] = `
+<form
+  className="pupservationForm"
+  onSubmit={[Function]}
+>
+  <h3
+    className="pupservation-header"
+  >
+    Pick a date:
+  </h3>
+  <div
+    className="dateDropdown"
+  >
+    <t
+      allowSameDay={false}
+      dateFormat="MM/dd/yyyy"
+      dateFormatCalendar="LLLL yyyy"
+      disabled={false}
+      disabledKeyboardNavigation={false}
+      dropdownMode="scroll"
+      inlineFocusSelectedMonth={false}
+      monthsShown={1}
+      name="dateList"
+      nextMonthButtonLabel="Next Month"
+      nextYearButtonLabel="Next Year"
+      onBlur={[Function]}
+      onCalendarClose={[Function]}
+      onCalendarOpen={[Function]}
+      onChange={[Function]}
+      onClickOutside={[Function]}
+      onFocus={[Function]}
+      onInputClick={[Function]}
+      onInputError={[Function]}
+      onKeyDown={[Function]}
+      onMonthChange={[Function]}
+      onSelect={[Function]}
+      onYearChange={[Function]}
+      preventOpenOnFocus={false}
+      previousMonthButtonLabel="Previous Month"
+      previousYearButtonLabel="Previous Year"
+      readOnly={false}
+      renderDayContents={[Function]}
+      selected=""
+      shouldCloseOnSelect={true}
+      showMonthYearPicker={false}
+      showPopperArrow={true}
+      showPreviousMonths={false}
+      showQuarterYearPicker={false}
+      showTimeInput={false}
+      showTimeSelect={false}
+      strictParsing={false}
+      timeCaption="Time"
+      timeInputLabel="Time"
+      timeIntervals={30}
+      withPortal={false}
+    />
+  </div>
+  <h3
+    className="pupservation-header"
+  >
+    Who's coming?
+  </h3>
+  <select
+    className="listOfPups"
+    name="pupList"
+  />
+  <h3
+    className="pupservation-header"
+  >
+    Services:
+  </h3>
+  <select
+    className="listOfServices"
+    name="serviceList"
+  >
+    <option
+      value="Grooming"
+    >
+      Grooming
+    </option>
+    <option
+      value="Vet"
+    >
+      Vet
+    </option>
+    <option
+      value="Daycare"
+    >
+      Daycare
+    </option>
+    <option
+      value="Visiting"
+    >
+      Office Visit
+    </option>
+  </select>
+  <section
+    className="note"
+  >
+    <label>
+      Note
+    </label>
+    <textarea
+      name="note"
+      type="text"
+    />
+  </section>
+  <button
+    className="pupservationConfirm-container"
+    type="submit"
+  >
+    Submit
+  </button>
+</form>
+`;
