@@ -12,9 +12,9 @@ export default class SignupPage extends Component {
     }
 
     handleRegistrationSuccess = user => {
-      const { location, history } = this.props
-      const destination = (location.state || {}).from || '/home'
-      history.push(destination)
+      const { history } = this.props
+      history.push('/home')
+      window.location.reload()
     }
   
     render() {

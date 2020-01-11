@@ -29,11 +29,12 @@ export default class SignupForm extends Component {
         .then(res => {
             localStorage.setItem('user_id', res.id)
             TokenService.saveAuthToken(res.authToken)
+            name.value = ''
+            email.value = ''
+            password.value = ''
+            this.props.onRegistrationSuccess()
         })
-        name.value = ''
-        email.value = ''
-        password.value = ''
-        this.props.onRegistrationSuccess()
+
       }
       else {
         this.setState({error: res.error})

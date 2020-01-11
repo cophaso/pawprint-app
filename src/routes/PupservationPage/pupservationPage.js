@@ -41,6 +41,9 @@ class PupservationPage extends React.Component {
       if(pupList.value === ''){
         this.setState({error: 'Please Choose Or Add a Pup'})
       }
+      else if(dateList.value === ''){
+        this.setState({error: 'Please Choose a Date'})
+      }
       else {
         PupServicesApiService.postPupService({
           appt_date: dateList.value,
@@ -94,7 +97,7 @@ class PupservationPage extends React.Component {
               
               <h3 className='pupservation-header'>Who's coming?</h3>
               <select className='listOfPups' name='pupList'>
-                <option value="" selected>Select a Pup</option>
+                <option value="">Select a Pup</option>
                 {dropPups}
               </select>
 

@@ -5,6 +5,9 @@ exports[`AddPupForm component renders a form.AddPupForm by default 1`] = `
   className="AddPupForm"
   onSubmit={[Function]}
 >
+  <div
+    role="alert"
+  />
   <section
     className="pup-name"
   >
@@ -74,6 +77,9 @@ exports[`AddPupForm component renders the AddPupForm given props 1`] = `
   className="AddPupForm"
   onSubmit={[Function]}
 >
+  <div
+    role="alert"
+  />
   <section
     className="pup-name"
   >
