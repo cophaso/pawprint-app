@@ -1,6 +1,6 @@
-import React from 'react'
-import './UsersPupsList.css'
-import UsersPup from '../UsersPup/UsersPup'
+import React from 'react';
+import './UsersPupsList.css';
+import UsersPup from '../UsersPup/UsersPup';
 
 export default class UsersPupsList extends React.Component {
   render() {
@@ -24,4 +24,4 @@ export default class UsersPupsList extends React.Component {
 
 UsersPupsList.defaultProps = {
   pups: [],
-}
+};

@@ -52,6 +52,10 @@
   text-shadow: 1px 1px gainsboro;
   font-size: medium;
 }
+
+.pups{
+  padding-bottom: 10px;
+}
 }
 
 
@@ -102,6 +106,10 @@
   color: white;
   text-shadow: 1px 1px gainsboro;
   font-size: 24px;
+}
+
+.pups{
+  padding-bottom: 10px;
 }
 }
 
@@ -155,5 +163,9 @@
     color: white;
     text-shadow: 1px 1px gainsboro;
     font-size: 24px;
+  }
+
+  .pups{
+    padding-bottom: 10px;
   }
 }

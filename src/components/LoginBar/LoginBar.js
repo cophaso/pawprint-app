@@ -1,6 +1,6 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import './LoginBar.css'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import './LoginBar.css';
 
 export default function LoginBar(){
     return(

@@ -1,6 +1,6 @@
-import React from 'react'
-import './UsersPup.css'
-import { Link } from 'react-router-dom'
+import React from 'react';
+import './UsersPup.css';
+import { Link } from 'react-router-dom';
 
 export default function UsersPup(props) {
   return (

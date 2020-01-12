@@ -5,41 +5,40 @@
 @media only screen and (max-width: 768px) {
     /* phones */
 
-.pupservationContainer {
+  .pupservationContainer {
     background-color: #214A77;  
     color: white;
     width: 90%;
     margin-left: auto;
     margin-right: auto;
     padding: 100px 50px 50px 50px;
-}
+  }
 
-.pupservation-heading {
+  .pupservation-heading {
     text-align: center;
     margin: 20px 0 20px 0;
     font-size: 26px;
+  }
 
-}
-
-input, select {
+  input, select {
     width: 90%;
     margin: 0 auto;
     background-color: white;
     font-size: 20px;
-}
+  }
 
-.pupservation-header, .note {
+  .pupservation-header, .note {
     color: white;
     text-shadow: gainsboro;
     font-size: 20px;
     padding-top: 10px;
-}
+  }
 
-.note {
+  .note {
     padding: 20px 0;
-}
+  }
 
-.pupservationConfirm-container {
+  .pupservationConfirm-container {
     font-size: 16px;
     border-radius: 4px;
     padding: 5px 10px;
@@ -49,89 +48,85 @@ input, select {
   }
 }
 
-
 @media only screen and (min-width: 768px) {
-    /* tablets and desktop */
-    .pupservationContainer {
-        background-color: #214A77;  
-        color: white;
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 100px 50px 50px 50px;
-
-    }
-    
-    .pupservation-heading {
-        text-align: center;
-        margin: 20px 0 20px 0;
-        font-size: 26px;
-    
-    }
-    
-    input, select {
-        width: 90%;
-        margin: 0 auto;
-        background-color: white;
-        font-size: 30px;
-    }
-    
-    .pupservation-header, .note {
-        color: white;
-        text-shadow: gainsboro;
-        font-size: 26px;
-        padding-top: 10px;
-    }
-
-    .pupservationConfirm-container {
-        font-size: 16px;
-        border-radius: 4px;
-        padding: 5px 10px;
-        background: #E6E6EB;
-        color: #214A77;
-        margin: 20px 20px 0 0;
-      }
-}
-  @media only screen and (min-width: 1000px) {
-      /* tablets and desktop */
-      .pupservationContainer {
-        background-color: #214A77;  
-        color: white;
-        width: 70%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 100px 50px 50px 50px;
-        text-align: center;
-    }
-    
-    .pupservation-heading {
-        text-align: center;
-        margin: 20px 0 20px 0;
-        font-size: 26px;
-    
-    }
-    
-    input, select {
-        width: 90%;
-        margin: 0 auto;
-        background-color: white;
-        font-size: 30px;
-    }
-    
-    .pupservation-header, .note {
-        color: white;
-        text-shadow: gainsboro;
-        font-size: 26px;
-        padding-top: 10px;
-    
-    }
-
-    .pupservationConfirm-container {
-        font-size: 26px;
-        border-radius: 4px;
-        padding: 5px 10px;
-        background: #E6E6EB;
-        color: #214A77;
-        margin: 20px 20px 0 0;
-      }
+  /* tablets and desktop */
+  .pupservationContainer {
+    background-color: #214A77;  
+    color: white;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 50px 50px 50px;
   }
+    
+  .pupservation-heading {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 26px;
+  }
+    
+  input, select {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 30px;
+  }
+    
+  .pupservation-header, .note {
+    color: white;
+    text-shadow: gainsboro;
+    font-size: 26px;
+    padding-top: 10px;
+  }
+
+  .pupservationConfirm-container {
+    font-size: 16px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin: 20px 20px 0 0;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  /* tablets and desktop */
+  .pupservationContainer {
+    background-color: #214A77;  
+    color: white;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px 50px 50px 50px;
+    text-align: center;
+  }
+
+  .pupservation-heading {
+    text-align: center;
+    margin: 20px 0 20px 0;
+    font-size: 26px;
+  }
+
+  input, select {
+    width: 90%;
+    margin: 0 auto;
+    background-color: white;
+    font-size: 30px;
+  }
+
+  .pupservation-header, .note {
+    color: white;
+    text-shadow: gainsboro;
+    font-size: 26px;
+    padding-top: 10px;
+  }
+
+  .pupservationConfirm-container {
+    font-size: 26px;
+    border-radius: 4px;
+    padding: 5px 10px;
+    background: #E6E6EB;
+    color: #214A77;
+    margin: 20px 20px 0 0;
+  }
+}

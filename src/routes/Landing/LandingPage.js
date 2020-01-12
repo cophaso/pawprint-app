@@ -1,10 +1,10 @@
-import React from 'react'
-import './LandingPage.css'
-import NavBar from '../../components/NavBar/NavBar'
-import LoginBar from '../../components/LoginBar/LoginBar'
-import grump from '../../assets/images/grump.jpg'
-import eyes from '../../assets/images/eyes.jpg'
-import LandingCarousel from '../../components/LandingCarousel/landingCarousel'
+import React from 'react';
+import './LandingPage.css';
+import NavBar from '../../components/NavBar/NavBar';
+import LoginBar from '../../components/LoginBar/LoginBar';
+import grump from '../../assets/images/grump.jpg';
+import eyes from '../../assets/images/eyes.jpg';
+import LandingCarousel from '../../components/LandingCarousel/landingCarousel';
 
 export default function LandingPage(){
     return (

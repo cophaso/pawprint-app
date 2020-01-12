@@ -2,15 +2,11 @@ import React from 'react';
 import './homePage.css';
 import NavBar from '../../components/NavBar/NavBar';
 import PupservationBar from '../../components/PupservationBar/PupservationBar';
-import {Link} from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
 
 
 class HomePage extends React.Component {
-    // constructor(props) {
-    //   super(props);
-    // }
-    
     render() {
       return (
         <div>

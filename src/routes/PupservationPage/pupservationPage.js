@@ -17,12 +17,12 @@ class PupservationPage extends React.Component {
     services: [],
     error: null
     };
-  }
+  };
 
   componentDidMount() {
     PupsApiService.getPups()
       .then( puppers => this.setState({pups: puppers}) )
-  }
+  };
 
     // sets the date for the date picker
     handleChange = date => {
@@ -32,11 +32,11 @@ class PupservationPage extends React.Component {
     };
 
     handleSubmit = ev =>{
-      ev.preventDefault()
+      ev.preventDefault();
   
-      this.setState({error: null})
+      this.setState({error: null});
   
-      const {dateList, pupList, serviceList, note} = ev.target
+      const {dateList, pupList, serviceList, note} = ev.target;
 
       if(pupList.value === ''){
         this.setState({error: 'Please Choose Or Add a Pup'})

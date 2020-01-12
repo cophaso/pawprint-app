@@ -1,4 +1,4 @@
-import config from '../config'
+import config from '../config';
 
 const PupServicesApiService = {
   postPupService({ appt_date, service_type, note, pup_id }) {
@@ -13,4 +13,4 @@ const PupServicesApiService = {
   }
 }
 
-export default PupServicesApiService
+export default PupServicesApiService;

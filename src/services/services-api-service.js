@@ -1,5 +1,5 @@
-import config from '../config'
-import TokenService from './token-service'
+import config from '../config';
+import TokenService from './token-service';
 
 const ServicesApiService = {
   getServices(){
@@ -32,4 +32,4 @@ const ServicesApiService = {
   }
 }
 
-export default ServicesApiService
+export default ServicesApiService;

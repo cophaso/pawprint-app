@@ -1,14 +1,14 @@
-import React from 'react'
-import {Link} from 'react-router-dom'
-import {slide as Menu} from 'react-burger-menu'
-import './HamburgerMenu.css'
-import TokenService from '../../services/token-service'
+import React from 'react';
+import {Link} from 'react-router-dom';
+import {slide as Menu} from 'react-burger-menu';
+import './HamburgerMenu.css';
+import TokenService from '../../services/token-service';
 
 export default props => {
    const handleLogoutClick = () => {
         TokenService.clearAuthToken();
 
-    }
+    };
 
     const renderLogoutLink = () => {
         return (
@@ -17,7 +17,7 @@ export default props => {
                 <li><Link to='/signup' className='bugerLink'>Signup</Link></li>
             </ul>
         )
-      }
+      };
     
       const renderLoginLink = () => {
         return (
@@ -28,7 +28,7 @@ export default props => {
                 <li><Link to='/' className='bugerLink' onClick={handleLogoutClick}>Signout</Link></li>
             </ul>
         )
-      }
+      };
 
     return(
         <Menu {...props}>

@@ -77,7 +77,10 @@ function PupServices({services = []}){
     return(
         <ul className='aboutPup'>
             {services.map(service =>
-                <li key={service.id}>{format(new Date(new Date(service.appt_date).getTime() - new Date(service.appt_date).getTimezoneOffset() * -60000 ), 'MMMMMM dd, iii')}: {service.service_type}</li>
+                <li key={service.id}>
+                    {format(new Date(new Date(service.appt_date).getTime() - new Date(service.appt_date).getTimezoneOffset() * -60000 ), 'MMMMMM dd, iii')}: {service.service_type}
+                    <p className='profile-note'>{service.note}</p>
+                </li>
             )}
         </ul>
     )

@@ -2,14 +2,15 @@
   box-sizing: border-box;
 }
   
-  .welcomeBanner {
-    margin: auto;
-    display: block;
-    flex-direction: column;
-    height: 200px;
-    text-align: center;
-    padding-top: 100px;
-  }
+.welcomeBanner {
+  margin: auto;
+  display: block;
+  flex-direction: column;
+  height: 200px;
+  text-align: center;
+  padding-top: 100px;
+}
+
 .dogCon {
   margin: 0 30% 20px;
 }
@@ -18,51 +19,49 @@
   text-align: left;
 }
   
-  .title, .dogIcon, .counter {
-    border: 2px solid #214A77;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    flex: 1 0 0;
-    color: white;
+.title, .dogIcon, .counter {
+  border: 2px solid #214A77;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1 0 0;
+  color: white;
 
-  }
-  
-  .title { 
-    background-color: #214A77; 
-    border-bottom: none;
-    border-radius: 10px 10px 0 0;
-  }
-  
-  .counter { 
-    position: relative;
-    background-color: #214A77; 
-    border-top: 0;
-    border-radius: 0 0 10px 10px;
-    /* z-index: 4; */
-  }
-  
-  .title, .counter {
-    text-transform: capitalize;
-    font-weight: 500;
-    font-size: 1.2em;
-  }
-  
-  .dogIcon {
-    position: relative;
-    background-color: white;
-    color: black;
-    flex: 2 0 0;
-    border-top: 0; border-bottom: 0;
-    font-weight: 100;
-    font-size: 6em;
-  }
+}
+
+.title { 
+  background-color: #214A77; 
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+
+.counter { 
+  position: relative;
+  background-color: #214A77; 
+  border-top: 0;
+  border-radius: 0 0 10px 10px;
+}
+
+.title, .counter {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 1.2em;
+}
+
+.dogIcon {
+  position: relative;
+  background-color: white;
+  color: black;
+  flex: 2 0 0;
+  border-top: 0; border-bottom: 0;
+  font-weight: 100;
+  font-size: 6em;
+}
 
 .introduction {
   display: block;
   padding: 25px 15px 15px 15px;
   background-color: whitesmoke;
-  /* opacity: 80%; */
   font-size: 20px;
 }
 

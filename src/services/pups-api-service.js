@@ -1,5 +1,5 @@
-import config from '../config'
-import TokenService from './token-service'
+import config from '../config';
+import TokenService from './token-service';
 
 const PupsApiService = {
   getPups(){
@@ -53,4 +53,4 @@ const PupsApiService = {
   }
 }
 
-export default PupsApiService
+export default PupsApiService;
