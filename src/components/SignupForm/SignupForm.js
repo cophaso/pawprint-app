@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { NavLink } from 'react-router-dom'
-import TokenService from '../../services/token-service'
-import AuthApiService from '../../services/auth-api-service'
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import TokenService from '../../services/token-service';
+import AuthApiService from '../../services/auth-api-service';
 
 export default class SignupForm extends Component {
   static defaultProps = {
@@ -29,11 +29,12 @@ export default class SignupForm extends Component {
         .then(res => {
             localStorage.setItem('user_id', res.id)
             TokenService.saveAuthToken(res.authToken)
+            name.value = ''
+            email.value = ''
+            password.value = ''
+            this.props.onRegistrationSuccess()
         })
-        name.value = ''
-        email.value = ''
-        password.value = ''
-        this.props.onRegistrationSuccess()
+
       }
       else {
         this.setState({error: res.error})

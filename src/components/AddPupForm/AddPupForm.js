@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 import PupsApiService from '../../services/pups-api-service';
 
 export default class AddPupForm extends Component {
@@ -8,14 +8,14 @@ export default class AddPupForm extends Component {
     pups: [],
     error: null
   };
- }
+ };
 
      handleSubmit = ev =>{
-      ev.preventDefault()
+      ev.preventDefault();
   
-      this.setState({error: null})
+      this.setState({error: null});
 
-      const { pup_name, breed, allergies, hobbies, image_url} = ev.target
+      const { pup_name, breed, allergies, hobbies, image_url} = ev.target;
 
       let img_url;
 

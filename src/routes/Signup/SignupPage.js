@@ -1,7 +1,7 @@
-import React, { Component }  from 'react'
-import SignupForm from '../../components/SignupForm/SignupForm'
-import NavBar from '../../components/NavBar/NavBar'
-import './SignupPage.css'
+import React, { Component }  from 'react';
+import SignupForm from '../../components/SignupForm/SignupForm';
+import NavBar from '../../components/NavBar/NavBar';
+import './SignupPage.css';
 
 export default class SignupPage extends Component {
     static defaultProps = {
@@ -9,13 +9,13 @@ export default class SignupPage extends Component {
       history: {
         push: () => {},
       },
-    }
+    };
 
     handleRegistrationSuccess = user => {
-      const { location, history } = this.props
-      const destination = (location.state || {}).from || '/home'
-      history.push(destination)
-    }
+      const { history } = this.props
+      history.push('/home')
+      window.location.reload()
+    };
   
     render() {
       return (

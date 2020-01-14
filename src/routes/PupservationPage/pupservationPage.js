@@ -17,12 +17,12 @@ class PupservationPage extends React.Component {
     services: [],
     error: null
     };
-  }
+  };
 
   componentDidMount() {
     PupsApiService.getPups()
       .then( puppers => this.setState({pups: puppers}) )
-  }
+  };
 
     // sets the date for the date picker
     handleChange = date => {
@@ -32,14 +32,17 @@ class PupservationPage extends React.Component {
     };
 
     handleSubmit = ev =>{
-      ev.preventDefault()
+      ev.preventDefault();
   
-      this.setState({error: null})
+      this.setState({error: null});
   
-      const {dateList, pupList, serviceList, note} = ev.target
+      const {dateList, pupList, serviceList, note} = ev.target;
 
       if(pupList.value === ''){
         this.setState({error: 'Please Choose Or Add a Pup'})
+      }
+      else if(dateList.value === ''){
+        this.setState({error: 'Please Choose a Date'})
       }
       else {
         PupServicesApiService.postPupService({
@@ -94,7 +97,7 @@ class PupservationPage extends React.Component {
               
               <h3 className='pupservation-header'>Who's coming?</h3>
               <select className='listOfPups' name='pupList'>
-                <option value="" selected>Select a Pup</option>
+                <option value="">Select a Pup</option>
                 {dropPups}
               </select>
 

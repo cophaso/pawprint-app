@@ -1,9 +1,9 @@
-import React from 'react'
-import './UsersPupsPage.css'
-import NavBar from '../../components/NavBar/NavBar'
-import UsersPupsList from '../../components/UsersPupsList/UsersPupsList'
-import { Link } from 'react-router-dom'
-import PupsApiService from '../../services/pups-api-service'
+import React from 'react';
+import './UsersPupsPage.css';
+import NavBar from '../../components/NavBar/NavBar';
+import UsersPupsList from '../../components/UsersPupsList/UsersPupsList';
+import { Link } from 'react-router-dom';
+import PupsApiService from '../../services/pups-api-service';
 
 
 export default class UsersPupsPage extends React.Component {
@@ -12,12 +12,12 @@ export default class UsersPupsPage extends React.Component {
     this.state = {
       pups: []
     };
-  }
+  };
 
   componentDidMount() {
     PupsApiService.getPups()
       .then( puppers => this.setState({pups: puppers}) )
-  }
+  };
 
   render() {
     return (
